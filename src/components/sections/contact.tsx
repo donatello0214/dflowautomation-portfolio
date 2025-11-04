@@ -25,7 +25,7 @@ import {
   AlertDialogTitle,
 } from '@/components/ui/alert-dialog';
 import { useState } from 'react';
-import { MailCheck, Loader2, Linkedin, Github } from 'lucide-react';
+import { Mail, MailCheck, Loader2, Linkedin, Github } from 'lucide-react';
 import { sendContactEmail } from '@/ai/flows/send-contact-email';
 import { useToast } from '@/hooks/use-toast';
 
@@ -110,6 +110,10 @@ export function Contact() {
             <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-accent transition-colors">
               <Github className="h-8 w-8" />
               <span className="sr-only">GitHub</span>
+            </a>
+            <a href="mailto:dflowautomation@gmail.com" className="text-foreground/60 hover:text-accent transition-colors">
+              <Mail className="h-8 w-8" />
+              <span className="sr-only">Email</span>
             </a>
         </div>
         <div className="relative rounded-lg border border-accent/20 bg-card p-8 shadow-lg shadow-accent/20">
