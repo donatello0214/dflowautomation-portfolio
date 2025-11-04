@@ -12,12 +12,16 @@ import {
 } from '@/components/ui/dialog';
 import Image from 'next/image';
 import { Button } from './ui/button';
-import { ArrowUpRight, MessageCircle } from 'lucide-react';
+import { ArrowUpRight, MessageCircle, X } from 'lucide-react';
 import { Badge } from './ui/badge';
+import { useState } from 'react';
+import { cn } from '@/lib/utils';
 
 export function ProjectCard({ project }: { project: Project }) {
+  const [isZoomed, setIsZoomed] = useState(false);
+
   return (
-    <Dialog>
+    <Dialog onOpenChange={() => setIsZoomed(false)}>
       <DialogTrigger asChild>
         <div className="group relative cursor-pointer overflow-hidden rounded-lg bg-card shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-accent/30 hover:shadow-xl">
           <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/80 via-black/0 to-black/0 transition-all group-hover:from-black/90" />
@@ -45,7 +49,7 @@ export function ProjectCard({ project }: { project: Project }) {
       </DialogTrigger>
       <DialogContent className="max-w-3xl border-accent/20 bg-background/80 shadow-lg shadow-accent/20 backdrop-blur-lg sm:rounded-lg max-h-[90vh] flex flex-col">
         <DialogHeader>
-          <div className="mb-4 aspect-video w-full overflow-hidden rounded-lg">
+          <div className="mb-4 aspect-video w-full overflow-hidden rounded-lg cursor-zoom-in" onClick={() => setIsZoomed(true)}>
             <Image
               src={project.image.imageUrl}
               alt={project.title}
@@ -82,6 +86,29 @@ export function ProjectCard({ project }: { project: Project }) {
             </Button>
           </DialogClose>
         </div>
+        
+        {isZoomed && (
+          <div 
+            className="fixed inset-0 z-[999] flex items-center justify-center bg-black/80 backdrop-blur-sm animate-in fade-in-50 cursor-zoom-out"
+            onClick={() => setIsZoomed(false)}
+          >
+            <button 
+                onClick={() => setIsZoomed(false)} 
+                className="absolute top-4 right-4 z-10 text-white hover:text-accent transition-colors"
+            >
+                <X className="h-8 w-8" />
+                <span className="sr-only">Close</span>
+            </button>
+            <Image
+              src={project.image.imageUrl}
+              alt={project.title}
+              width={1920}
+              height={1080}
+              className="max-w-[95vw] max-h-[95vh] w-auto h-auto object-contain transition-transform duration-300 ease-out animate-in zoom-in-75"
+            />
+          </div>
+        )}
+
       </DialogContent>
     </Dialog>
   );
