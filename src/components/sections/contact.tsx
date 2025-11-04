@@ -158,7 +158,7 @@ export function Contact() {
       </div>
       
       <AlertDialog open={showConfirmation} onOpenChange={setShowConfirmation}>
-        <AlertDialogContent>
+        <AlertDialogContent className="w-11/12 max-w-md rounded-lg">
           <AlertDialogHeader>
             <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-green-100 dark:bg-green-900/50">
               <MailCheck className="h-6 w-6 text-green-600 dark:text-green-400" />

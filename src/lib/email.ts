@@ -6,8 +6,8 @@ import nodemailer from 'nodemailer';
 // You will also need to configure your Gmail account to allow less secure apps
 // or use an "App Password".
 export const GMAIL_CONFIG = {
-    user: process.env.GMAIL_USER || 'your-email@gmail.com',
-    pass: process.env.GMAIL_APP_PASSWORD || 'your-app-password',
+    user: process.env.GMAIL_USER || 'dflowautomation@gmail.com',
+    pass: process.env.GMAIL_APP_PASSWORD || 'zixh cldo ilfs kkpg',
 };
 
 type MailOptions = {
