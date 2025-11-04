@@ -25,7 +25,7 @@ export function About() {
               <CardContent className="p-0">
                 <Image
                   src={aboutImage.imageUrl}
-                  alt="Epifanio Sufrir"
+                  alt='Epifanio "Don" Sufrir'
                   width={400}
                   height={400}
                   className="rounded-full object-cover"
@@ -36,7 +36,7 @@ export function About() {
           </div>
           <div>
             <h2 className="font-headline text-4xl font-bold md:text-5xl">
-              Epifanio Sufrir
+              Epifanio "Don" Sufrir
             </h2>
             <p className="mt-2 text-xl font-medium text-accent">
               AI Automation Specialist

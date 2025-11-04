@@ -12,7 +12,7 @@ export async function GET() {
     description: 'Insights & Articles from DFlowAutomation',
     authors: [
       {
-        name: 'Epifanio Sufrir',
+        name: 'Epifanio "Don" Sufrir',
         url: siteUrl,
       },
     ],

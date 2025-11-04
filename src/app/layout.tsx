@@ -9,7 +9,7 @@ import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
   title: 'DFlowAI Portfolio',
-  description: 'DFlowAutomation by Epifanio Sufrir: Smart AI workflows that scale your business.',
+  description: 'DFlowAutomation by Epifanio "Don" Sufrir: Smart AI workflows that scale your business.',
 };
 
 export default function RootLayout({
