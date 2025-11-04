@@ -1,5 +1,6 @@
 
 import { PlaceHolderImages } from './placeholder-images';
+import { techStack } from './tech-stack';
 
 export type Project = {
   id: string;
@@ -26,6 +27,12 @@ export type Testimonial = {
   quote: string;
   image: (typeof PlaceHolderImages)[0];
 };
+
+export type TechLogo = {
+  id: string;
+  name: string;
+};
+
 
 export const projects: Project[] = [
   {
@@ -160,3 +167,5 @@ export const testimonials: Testimonial[] = [
     image: PlaceHolderImages.find(p => p.id === 'testimonial3')!,
   }
 ];
+
+export const techLogos: TechLogo[] = techStack;

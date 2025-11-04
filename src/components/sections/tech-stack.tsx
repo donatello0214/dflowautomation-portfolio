@@ -1,19 +1,21 @@
 'use client';
 import { Icons } from '../icons';
 import { useEffect, useRef } from 'react';
+import { techLogos } from '@/lib/data';
+import type { TechLogo } from '@/lib/data';
 
-const techLogos = [
-  { name: 'OpenAI', icon: Icons.OpenAI },
-  { name: 'Firebase', icon: Icons.Firebase },
-  { name: 'Make.com', icon: Icons.Make },
-  { name: 'n8n', icon: Icons.n8n },
-  { name: 'Zapier', icon: Icons.Zapier },
-  { name: 'Notion', icon: Icons.Notion },
-  { name: 'Airtable', icon: Icons.Airtable },
-  { name: 'Slack', icon: Icons.Slack },
-  { name: 'Pipedrive', icon: Icons.Pipedrive },
-  { name: 'Google Cloud', icon: Icons.GoogleCloud },
-];
+const iconMap: Record<string, React.FC<React.SVGProps<SVGSVGElement>>> = {
+  OpenAI: Icons.OpenAI,
+  Firebase: Icons.Firebase,
+  Make: Icons.Make,
+  n8n: Icons.n8n,
+  Zapier: Icons.Zapier,
+  Notion: Icons.Notion,
+  Airtable: Icons.Airtable,
+  Slack: Icons.Slack,
+  Pipedrive: Icons.Pipedrive,
+  GoogleCloud: Icons.GoogleCloud,
+};
 
 export function TechStack() {
     const scrollerRef = useRef<HTMLDivElement>(null);
@@ -43,12 +45,16 @@ export function TechStack() {
         </h2>
         <div className="tech-scroller" ref={scrollerRef}>
           <div className="tech-scroller-inner flex gap-12">
-            {techLogos.map((tech, index) => (
-              <div key={index} className="flex flex-col items-center gap-2 text-foreground/60 transition-colors hover:text-accent">
-                <tech.icon className="h-12 w-12" />
-                <span className="text-sm font-medium">{tech.name}</span>
-              </div>
-            ))}
+            {techLogos.map((tech) => {
+              const Icon = iconMap[tech.id];
+              if (!Icon) return null;
+              return (
+                <div key={tech.id} className="flex flex-col items-center gap-2 text-foreground/60 transition-colors hover:text-accent">
+                  <Icon className="h-12 w-12" />
+                  <span className="text-sm font-medium">{tech.name}</span>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

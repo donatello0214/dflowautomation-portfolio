@@ -1,0 +1,14 @@
+{
+  "techStack": [
+    { "id": "OpenAI", "name": "OpenAI" },
+    { "id": "Firebase", "name": "Firebase" },
+    { "id": "Make", "name": "Make.com" },
+    { "id": "n8n", "name": "n8n" },
+    { "id": "Zapier", "name": "Zapier" },
+    { "id": "Notion", "name": "Notion" },
+    { "id": "Airtable", "name": "Airtable" },
+    { "id": "Slack", "name": "Slack" },
+    { "id": "Pipedrive", "name": "Pipedrive" },
+    { "id": "GoogleCloud", "name": "Google Cloud" }
+  ]
+}
