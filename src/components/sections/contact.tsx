@@ -40,15 +40,10 @@ export function Contact() {
     },
   });
 
-  function onSubmit(data: ContactFormValues) {
-    setIsSubmitting(true);
-    const subject = encodeURIComponent(`Contact from ${data.name}`);
-    const body = encodeURIComponent(`${data.message}\n\nFrom: ${data.name}\nEmail: ${data.email}`);
-    const mailtoLink = `mailto:dflowautomation@gmail.com?subject=${subject}&body=${body}`;
-    window.location.href = mailtoLink;
-    form.reset();
-    setIsSubmitting(false);
-  }
+  const { name, email, message } = form.watch();
+  const mailtoLink = `mailto:dflowautomation@gmail.com?subject=${encodeURIComponent(
+    `Contact from ${name}`
+  )}&body=${encodeURIComponent(`${message}\n\nFrom: ${name}\nEmail: ${email}`)}`;
 
   return (
     <section id="contact" className="bg-background/80 backdrop-blur-sm">
@@ -63,7 +58,7 @@ export function Contact() {
         </div>
         <div className="relative rounded-lg border border-accent/20 bg-card p-8 shadow-lg shadow-accent/20">
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+            <form className="space-y-6">
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                 <FormField
                   control={form.control}
@@ -111,8 +106,7 @@ export function Contact() {
               />
               <div className="flex justify-end">
                 <Button 
-                  type="submit" 
-                  disabled={isSubmitting} 
+                  asChild
                   className={cn(
                     "relative overflow-hidden bg-primary text-primary-foreground transition-all duration-300 hover:bg-primary/90 hover:shadow-lg hover:shadow-cyan-500/50",
                     "active:scale-95",
@@ -122,15 +116,19 @@ export function Contact() {
                     '--ripple-color': 'rgba(0, 225, 255, 0.4)'
                   } as React.CSSProperties}
                 >
-                  {isSubmitting ? (
-                    <>
-                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                      Sending...
-                    </>
-                  ) : (
-                    'Send Message'
-                  )}
-                  <span className="absolute inset-0 animate-pulse bg-cyan-400/50 opacity-0 blur-xl group-hover:opacity-100"></span>
+                  <a href={form.formState.isValid ? mailtoLink : undefined} onClick={(e) => {
+                    if (!form.formState.isValid) {
+                      e.preventDefault();
+                      form.trigger();
+                      toast({
+                        variant: 'destructive',
+                        title: 'Incomplete Form',
+                        description: 'Please fill out all required fields before sending.',
+                      });
+                    }
+                  }}>
+                    Send Message
+                  </a>
                 </Button>
               </div>
             </form>
