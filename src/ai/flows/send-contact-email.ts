@@ -35,27 +35,12 @@ const sendContactEmailFlow = ai.defineFlow(
   async (input) => {
     const { name, email, message } = input;
     
-    // In a real application, you would use a transactional email service.
-    // For this example, we are logging to the console.
-    // This is NOT a real email sending implementation.
-    console.log('--- Sending Contact Email ---');
-    console.log(`To: dflowautomation@gmail.com`);
-    console.log(`From: ${name} <${email}>`);
-    console.log('Subject: New Contact Form Submission');
-    console.log('---');
-    console.log(message);
-    console.log('---------------------------');
-    
-    // The following is a placeholder for a real email implementation
-    // await sendMail({
-    //   ...GMAIL_CONFIG,
-    //   to: 'dflowautomation@gmail.com',
-    //   subject: `New message from ${name} via your portfolio`,
-    //   text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
-    //   html: `<p>Name: ${name}</p><p>Email: ${email}</p><p>Message:</p><p>${message}</p>`,
-    // });
-    
-    // We will simulate a delay to mimic a real network request
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    await sendMail({
+      from: `"${name}" <${GMAIL_CONFIG.user}>`,
+      to: 'dflowautomation@gmail.com',
+      subject: `New message from ${name} via your portfolio`,
+      text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
+      html: `<p>Name: ${name}</p><p>Email: <a href="mailto:${email}">${email}</a></p><p>Message:</p><p>${message}</p>`,
+    });
   }
 );

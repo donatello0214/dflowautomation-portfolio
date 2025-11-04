@@ -1,18 +1,17 @@
-// NOTE: This is a placeholder file for a real email implementation.
-// In a production application, you would use a service like Nodemailer with an SMTP
-// provider (e.g., SendGrid, Mailgun) to send emails.
-// This requires secure handling of credentials, which should not be stored in the frontend code.
+import nodemailer from 'nodemailer';
 
+// IMPORTANT: In a real application, these credentials should be stored securely
+// in environment variables (.env.local) and not hardcoded.
+// e.g., user: process.env.GMAIL_USER
+// You will also need to configure your Gmail account to allow less secure apps
+// or use an "App Password".
 export const GMAIL_CONFIG = {
-    // This configuration would be stored in environment variables on the server
-    // and not exposed to the client.
-    // user: process.env.GMAIL_USER,
-    // pass: process.env.GMAIL_APP_PASSWORD,
+    user: process.env.GMAIL_USER || 'your-email@gmail.com',
+    pass: process.env.GMAIL_APP_PASSWORD || 'your-app-password',
 };
 
 type MailOptions = {
-    user: string;
-    pass: string;
+    from: string;
     to: string;
     subject: string;
     text: string;
@@ -20,28 +19,29 @@ type MailOptions = {
 };
 
 export async function sendMail(options: MailOptions) {
-    // This is where you would implement the email sending logic using a library like Nodemailer.
-    // For example:
-    // const transporter = nodemailer.createTransport({
-    //   service: 'gmail',
-    //   auth: {
-    //     user: options.user,
-    //     pass: options.pass,
-    //   },
-    // });
-    // await transporter.sendMail({
-    //   from: `"Your Name" <${options.user}>`,
-    //   to: options.to,
-    //   subject: options.subject,
-    //   text: options.text,
-    //   html: options.html,
-    // });
+    if (GMAIL_CONFIG.user === 'your-email@gmail.com' || GMAIL_CONFIG.pass === 'your-app-password') {
+        console.warn("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+        console.warn("!!! Email not sent. Please configure your email credentials !!!");
+        console.warn("!!! in src/lib/email.ts or set environment variables.      !!!");
+        console.warn("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+        // To avoid errors in the UI, we'll just log a warning and return.
+        return;
+    }
 
-    console.log("Simulating email sending with options:", {
-        to: options.to,
-        subject: options.subject,
+    const transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: GMAIL_CONFIG.user,
+        pass: GMAIL_CONFIG.pass,
+      },
     });
 
-    // Simulate network delay
-    return new Promise((resolve) => setTimeout(resolve, 500));
+    try {
+        const info = await transporter.sendMail(options);
+        console.log("Email sent: " + info.response);
+    } catch (error) {
+        console.error("Error sending email:", error);
+        // Re-throwing the error so the calling function can handle it.
+        throw new Error('Failed to send email.');
+    }
 }
