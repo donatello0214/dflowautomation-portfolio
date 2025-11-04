@@ -47,6 +47,8 @@ export function Contact() {
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     if (!isFormValid) {
       e.preventDefault();
+      // Manually trigger validation to show errors
+      form.trigger();
       toast({
         variant: 'destructive',
         title: 'Incomplete Form',
