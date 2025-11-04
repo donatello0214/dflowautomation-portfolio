@@ -1,3 +1,4 @@
+
 import { PlaceHolderImages } from './placeholder-images';
 
 export type Project = {
@@ -62,7 +63,7 @@ export const blogArticles: BlogArticle[] = [
   {
     id: 'blog1',
     title: 'How AI Agents Are Changing Workflow Automation',
-    date: 'August 5, 2024',
+    date: 'October 7, 2025',
     excerpt: 'Explore the rise of autonomous AI agents and their revolutionary impact on business process automation, from simple tasks to complex decision-making.',
     content: `
       <p>The world of workflow automation is undergoing a seismic shift, thanks to the advent of sophisticated AI agents. For decades, automation was synonymous with rigid, rule-based systems executing predefined tasks. While effective, these systems lacked the flexibility to handle ambiguity, context, or unforeseen exceptions. Today, AI agents are dismantling these limitations, ushering in an era of intelligent, autonomous automation.</p>
@@ -85,7 +86,7 @@ export const blogArticles: BlogArticle[] = [
   {
     id: 'blog2',
     title: 'The Future of CRM: Smarter, Faster, Fully Automated',
-    date: 'August 12, 2024',
+    date: 'October 14, 2025',
     excerpt: 'Customer Relationship Management is evolving. Discover how AI is making CRMs predictive, proactive, and deeply integrated into every facet of your business.',
     content: `
       <p>For years, Customer Relationship Management (CRM) platforms have served as digital rolodexes—reliable, yet passive, systems of record. The infusion of Artificial Intelligence is fundamentally changing this dynamic, transforming CRMs into proactive, intelligent engines for business growth. The CRM of tomorrow doesn't just store information; it anticipates needs, drives action, and uncovers hidden opportunities.</p>
@@ -108,7 +109,7 @@ export const blogArticles: BlogArticle[] = [
   {
     id: 'blog3',
     title: 'Building Autonomous Systems with AI Workflows',
-    date: 'August 19, 2024',
+    date: 'October 21, 2025',
     excerpt: 'A technical deep-dive into the architecture and tools required to build robust, scalable, and autonomous systems using modern AI workflow platforms.',
     content: `
       <p>The concept of an "autonomous system" has moved from the realm of science fiction to a practical business objective. But building one requires more than just access to a powerful AI model. It demands a thoughtful approach to architecture, a solid understanding of workflow tools, and a strategy for creating systems that are not only intelligent but also reliable and scalable.</p>
@@ -131,3 +132,5 @@ export const blogArticles: BlogArticle[] = [
     image: PlaceHolderImages.find(p => p.id === 'blog3')!,
   },
 ];
+
+    
