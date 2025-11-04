@@ -1,12 +1,11 @@
 'use client';
 
-import { Icons } from '../icons';
 import { Button } from '../ui/button';
-import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import Link from 'next/link';
 import { ThemeToggle } from '../theme-toggle';
+import { usePathname } from 'next/navigation';
 
 const navItems = [
   { href: '#about', label: 'About' },
@@ -16,14 +15,27 @@ const navItems = [
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const handleHomeClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (pathname === '/') {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
-        <Link href="/" className="mr-6 flex items-center space-x-2">
-          
+        <Link
+          href="/"
+          className="mr-6 flex items-center space-x-2"
+          onClick={handleHomeClick}
+        >
           <span className="font-bold font-headline text-xl">
-            <span className="text-red-500 drop-shadow-[0_0_8px_rgba(255,50,50,0.8)]">D</span>
+            <span className="text-red-500 drop-shadow-[0_0_8px_rgba(255,50,50,0.8)]">
+              D
+            </span>
             <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
               FlowAutomation
             </span>
@@ -46,8 +58,8 @@ export function Header() {
           </div>
           <Button asChild className="hidden md:flex group overflow-hidden relative">
             <a href="#contact">
-            <span className="absolute w-0 h-0 rounded-full bg-accent/30 group-hover:w-56 group-hover:h-56 transition-all ease-out duration-300"></span>
-            <span className="relative">Contact</span>
+              <span className="absolute w-0 h-0 rounded-full bg-accent/30 group-hover:w-56 group-hover:h-56 transition-all ease-out duration-300"></span>
+              <span className="relative">Contact</span>
             </a>
           </Button>
           <Button
