@@ -9,49 +9,73 @@
     {
       "id": "project2",
       "description": "Autonomous Slack Responder Project Image",
-      "imageUrl": "https://images.unsplash.com/photo-1659018966820-de07c94e0d01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxBSSUyMGNoYXRib3R8ZW58MHx8fHwxNzYyMjIyOTYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1684493735679-359868df0e18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8QUklMjBjaGF0Ym90fGVufDB8fHx8MTc2MjIyMjk2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "AI chatbot"
     },
     {
       "id": "project3",
       "description": "Automated Content Pipeline Project Image",
-      "imageUrl": "https://images.unsplash.com/photo-1673115810074-8944eba483f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhdXRvbWF0aW9uJTIwcGlwZWxpbmV8ZW58MHx8fHwxNzYyMjEwOTc0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1568578322186-a0cb6cdeb9ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YXV0b21hdGlvbiUyMHBpcGVsaW5lfGVufDB8fHx8MTc2MjIxMDk3NHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "automation pipeline"
     },
     {
       "id": "project4",
       "description": "GCP Data Processing Workflow Project Image",
-      "imageUrl": "https://images.unsplash.com/photo-1667372283496-893f0b1e7c16?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjbG91ZCUyMGRhdGF8ZW58MHx8fHwxNzYyMTY5NjgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1759752394755-1241472b589d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjbG91ZCUyMGRhdGF8ZW58MHx8fHwxNzYyMjcwOTA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "cloud data"
+    },
+    {
+      "id": "project5",
+      "description": "Dynamic n8n Financial Reporting",
+      "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmaW5hbmNpYWwlMjByZXBvcnR8ZW58MHx8fHwxNzYyMjU0MjAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "financial report"
+    },
+    {
+      "id": "project6",
+      "description": "Make.com E-commerce Sync",
+      "imageUrl": "https://picsum.photos/seed/project6/600/400",
+      "imageHint": "ecommerce sync"
+    },
+    {
+      "id": "project7",
+      "description": "Zapier HR Onboarding Automation",
+      "imageUrl": "https://images.unsplash.com/photo-1597244359368-70b01b8a97c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxIUiUyMG9uYm9hcmRpbmd8ZW58MHx8fHwxNzYyMjcwOTA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "HR onboarding"
+    },
+    {
+      "id": "project8",
+      "description": "GoHighLevel Funnel Automation",
+      "imageUrl": "https://images.unsplash.com/photo-1553484771-371a605b060b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzYWxlcyUyMGZ1bm5lbHxlbnwwfHx8fDE3NjIyMTE3MDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sales funnel"
     },
     {
       "id": "blog1",
       "description": "AI Agents and Workflow Automation Blog Image",
-      "imageUrl": "https://images.unsplash.com/photo-1625314887424-9f190599bd56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxBSSUyMHJvYm90fGVufDB8fHx8MTc2MjI0Nzc2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1601132359864-c974e79890ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxBSSUyMHJvYm90fGVufDB8fHx8MTc2MjI0Nzc2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "AI robot"
     },
     {
       "id": "blog2",
       "description": "The Future of CRM Blog Image",
-      "imageUrl": "https://images.unsplash.com/photo-1752959828455-7bdeb06198b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmdXR1cmlzdGljJTIwZGFzaGJvYXJkfGVufDB8fHx8MTc2MjE5MDkwMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1661029332138-3c653337a979?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmdXR1cmlzdGljJTIwZGFzaGJvYXJkfGVufDB8fHx8MTc2MjE5MDkwMnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "futuristic dashboard"
     },
     {
       "id": "blog3",
       "description": "Building Autonomous Systems Blog Image",
-      "imageUrl": "https://images.unsplash.com/photo-1709546698483-ab379d159048?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzeXN0ZW0lMjBhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzYyMTU0NDI3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1656604208230-bf1996ae255f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzeXN0ZW0lMjBhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzYyMjQ3NzY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "system architecture"
     },
     {
       "id": "about",
       "description": "Epifanio Sufrir portrait",
-      "imageUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjIyMjQ5MzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1624395213043-fa2e123b2656?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjIyMjQ5MzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "man portrait"
     },
     {
       "id": "testimonial1",
       "description": "Testimonial author 1 portrait",
-      "imageUrl": "https://images.unsplash.com/photo-1557053910-d9eadeed1c58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MjI0NDMxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MjI0NDMxOHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "woman portrait"
     },
     {
@@ -63,7 +87,7 @@
     {
       "id": "testimonial3",
       "description": "Testimonial author 3 portrait",
-      "imageUrl": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjIxODcyNzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1535643302794-19c3804b874b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGVyc29uJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYyMTg3MjcwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "person portrait"
     }
   ]

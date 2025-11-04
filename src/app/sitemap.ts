@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { blogArticles, projects } from '@/lib/data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const siteUrl = 'https://dflowautomation.com'; // Replace with your actual domain
+  const siteUrl = 'https://dflowautomation,elementfx.com'; // Replace with your actual domain
 
   const mainRoutes = ['/', '#about', '#projects', '#blog', '#contact'].map(route => ({
     url: `${siteUrl}/${route}`,

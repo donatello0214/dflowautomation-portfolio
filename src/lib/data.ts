@@ -71,6 +71,42 @@ export const projects: Project[] = [
     image: PlaceHolderImages.find(p => p.id === 'project4')!,
     link: '#',
   },
+  {
+    id: '5',
+    title: 'Dynamic n8n Financial Reporting',
+    description: 'Automated generation of financial reports from multiple data sources.',
+    details: 'Developed an n8n workflow that consolidates data from QuickBooks, Stripe, and a PostgreSQL database to generate weekly and monthly financial performance reports. The workflow includes AI-driven anomaly detection which flags unusual transactions for review. Reports are automatically formatted and emailed to stakeholders, providing timely and accurate financial insights.',
+    tools: ['n8n', 'QuickBooks API', 'Stripe API', 'PostgreSQL', 'OpenAI'],
+    image: PlaceHolderImages.find(p => p.id === 'project5')!,
+    link: '#',
+  },
+  {
+    id: '6',
+    title: 'Make.com E-commerce Sync',
+    description: 'Real-time inventory and order synchronization for Shopify and ERP.',
+    details: 'This Make.com scenario provides a robust, two-way synchronization between a Shopify store and a client\'s custom ERP system. The workflow captures new orders in real-time, updates inventory levels across both platforms to prevent overselling, and syncs customer data. It includes complex error handling to manage API rate limits and connection issues, ensuring data integrity.',
+    tools: ['Make.com', 'Shopify API', 'Custom ERP API', 'MySQL'],
+    image: PlaceHolderImages.find(p => p.id === 'project6')!,
+    link: '#',
+  },
+  {
+    id: '7',
+    title: 'Zapier HR Onboarding Automation',
+    description: 'A complete, automated onboarding process for new hires.',
+    details: 'A multi-step Zapier workflow that orchestrates the entire new hire onboarding process. Triggered by a new entry in an HR management system (like BambooHR), the "Zap" creates user accounts in G-Suite and Slack, enrolls the new hire in training courses within a learning management system, and sends a series of personalized welcome emails over their first week. This reduced manual onboarding tasks by 90%.',
+    tools: ['Zapier', 'BambooHR API', 'G-Suite', 'Slack API'],
+    image: PlaceHolderImages.find(p => p.id === 'project7')!,
+    link: '#',
+  },
+  {
+    id: '8',
+    title: 'GoHighLevel Funnel Automation',
+    description: 'AI-powered lead nurturing and appointment setting funnel.',
+    details: 'An advanced GoHighLevel workflow that captures leads from Facebook Ads and initiates a sophisticated, AI-driven nurturing sequence. The system uses SMS and email to engage leads, answers their questions using an AI chatbot, and automatically books qualified prospects directly into a sales representative\'s calendar. This created a fully automated top-of-funnel that runs 24/7.',
+    tools: ['GoHighLevel', 'Facebook Ads API', 'OpenAI', 'Calendly API'],
+    image: PlaceHolderImages.find(p => p.id === 'project8')!,
+    link: '#',
+  }
 ];
 
 export const blogArticles: BlogArticle[] = [
