@@ -27,17 +27,6 @@ const contactFormSchema = z.object({
 
 type ContactFormValues = z.infer<typeof contactFormSchema>;
 
-async function submitContactForm(data: ContactFormValues) {
-    // This is a placeholder for the actual server action.
-    // In a real app, you would import and call the server action here.
-    console.log('Form data submitted:', data);
-    // Simulate network delay
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    // Simulate success
-    return { success: true, message: 'Your message has been sent!' };
-}
-
-
 export function Contact() {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -51,31 +40,12 @@ export function Contact() {
     },
   });
 
-  async function onSubmit(data: ContactFormValues) {
-    setIsSubmitting(true);
-    try {
-        // Here you would call a server action
-        // const result = await yourServerAction(data);
-        const result = await submitContactForm(data);
-
-        if (result.success) {
-            toast({
-                title: 'Success!',
-                description: result.message,
-            });
-            form.reset();
-        } else {
-            throw new Error(result.message || 'An unknown error occurred.');
-        }
-    } catch (error) {
-        toast({
-            variant: 'destructive',
-            title: 'Uh oh! Something went wrong.',
-            description: error instanceof Error ? error.message : 'There was a problem with your request.',
-        });
-    } finally {
-        setIsSubmitting(false);
-    }
+  function onSubmit(data: ContactFormValues) {
+    const subject = encodeURIComponent(`Contact from ${data.name}`);
+    const body = encodeURIComponent(`${data.message}\n\nFrom: ${data.name}\nEmail: ${data.email}`);
+    const mailtoLink = `mailto:dflowautomation@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = mailtoLink;
+    form.reset();
   }
 
   return (
