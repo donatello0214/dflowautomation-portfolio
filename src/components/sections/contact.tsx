@@ -35,12 +35,26 @@ export function Contact() {
       email: '',
       message: '',
     },
+    mode: 'onChange',
   });
 
   const { name, email, message } = form.watch();
   const mailtoLink = `mailto:dflowautomation@gmail.com?subject=${encodeURIComponent(
     `Contact from ${name}`
   )}&body=${encodeURIComponent(`${message}\n\nFrom: ${name}\nEmail: ${email}`)}`;
+
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    form.trigger(); // Manually trigger validation
+    if (!form.formState.isValid) {
+      e.preventDefault(); // Prevent the link from being followed if the form is invalid
+      toast({
+        variant: 'destructive',
+        title: 'Incomplete Form',
+        description: 'Please fill out all required fields before sending.',
+      });
+    }
+  };
+
 
   return (
     <section id="contact" className="bg-background/80 backdrop-blur-sm">
@@ -113,17 +127,10 @@ export function Contact() {
                     '--ripple-color': 'rgba(0, 225, 255, 0.4)'
                   } as React.CSSProperties}
                 >
-                  <a href={form.formState.isValid ? mailtoLink : undefined} onClick={(e) => {
-                    if (!form.formState.isValid) {
-                      e.preventDefault();
-                      form.trigger();
-                      toast({
-                        variant: 'destructive',
-                        title: 'Incomplete Form',
-                        description: 'Please fill out all required fields before sending.',
-                      });
-                    }
-                  }}>
+                  <a 
+                    href={mailtoLink}
+                    onClick={handleClick}
+                  >
                     Send Message
                   </a>
                 </Button>
