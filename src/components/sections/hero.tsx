@@ -11,7 +11,16 @@ export function Hero() {
           Automate. Integrate. Elevate.
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-primary-foreground/80 sm:text-xl dark:text-slate-300 dark:drop-shadow-[0_2px_5px_rgba(119,188,255,0.3)]">
-          Smart AI workflows that scale your business — powered by DFlowAutomation.
+          Smart AI workflows that scale your business — powered by{' '}
+          <span className="font-headline font-bold">
+            <span className="text-red-500 drop-shadow-[0_0_8px_rgba(255,50,50,0.8)]">
+              D
+            </span>
+            <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+              FlowAutomation
+            </span>
+          </span>
+          .
         </p>
         <div className="mt-8 flex flex-col gap-4 sm:flex-row">
           <Button size="lg" asChild className="group relative overflow-hidden">
