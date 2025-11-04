@@ -29,6 +29,7 @@ export function Header() {
     href: pathname === '/' ? item.href : `/${item.href}`,
   }));
 
+  const contactHref = pathname === '/' ? '#contact' : '/#contact';
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -63,7 +64,7 @@ export function Header() {
             <ThemeToggle />
           </div>
           <Button asChild className="hidden md:flex group overflow-hidden relative">
-            <a href="#contact">
+            <a href={contactHref}>
               <span className="absolute w-0 h-0 rounded-full bg-accent/30 group-hover:w-56 group-hover:h-56 transition-all ease-out duration-300"></span>
               <span className="relative">Contact</span>
             </a>
@@ -93,7 +94,7 @@ export function Header() {
               </Link>
             ))}
             <Button asChild className="w-full">
-              <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
+              <a href={contactHref} onClick={() => setIsMobileMenuOpen(false)}>
                 Contact
               </a>
             </Button>
