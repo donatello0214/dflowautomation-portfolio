@@ -38,21 +38,23 @@ export function Contact() {
     mode: 'onChange',
   });
 
-  const { name, email, message } = form.watch();
-  const mailtoLink = `mailto:dflowautomation@gmail.com?subject=${encodeURIComponent(
-    `Contact from ${name}`
-  )}&body=${encodeURIComponent(`${message}\n\nFrom: ${name}\nEmail: ${email}`)}`;
-
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    form.trigger(); // Manually trigger validation
-    if (!form.formState.isValid) {
-      e.preventDefault(); // Prevent the link from being followed if the form is invalid
+  const handleClick = async () => {
+    const isValid = await form.trigger();
+    if (!isValid) {
       toast({
         variant: 'destructive',
         title: 'Incomplete Form',
         description: 'Please fill out all required fields before sending.',
       });
+      return;
     }
+
+    const { name, email, message } = form.getValues();
+    const mailtoLink = `mailto:dflowautomation@gmail.com?subject=${encodeURIComponent(
+      `Contact from ${name}`
+    )}&body=${encodeURIComponent(`${message}\n\nFrom: ${name}\nEmail: ${email}`)}`;
+    
+    window.location.href = mailtoLink;
   };
 
 
@@ -69,7 +71,7 @@ export function Contact() {
         </div>
         <div className="relative rounded-lg border border-accent/20 bg-card p-8 shadow-lg shadow-accent/20">
           <Form {...form}>
-            <form className="space-y-6">
+            <form onSubmit={(e) => e.preventDefault()} className="space-y-6">
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                 <FormField
                   control={form.control}
@@ -117,7 +119,8 @@ export function Contact() {
               />
               <div className="flex justify-end">
                 <Button 
-                  asChild
+                  type="button"
+                  onClick={handleClick}
                   className={cn(
                     "relative overflow-hidden bg-primary text-primary-foreground transition-all duration-300 hover:bg-primary/90 hover:shadow-lg hover:shadow-cyan-500/50",
                     "active:scale-95",
@@ -127,12 +130,7 @@ export function Contact() {
                     '--ripple-color': 'rgba(0, 225, 255, 0.4)'
                   } as React.CSSProperties}
                 >
-                  <a 
-                    href={mailtoLink}
-                    onClick={handleClick}
-                  >
-                    Send Message
-                  </a>
+                  Send Message
                 </Button>
               </div>
             </form>
