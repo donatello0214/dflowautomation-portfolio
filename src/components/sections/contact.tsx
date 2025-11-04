@@ -129,7 +129,12 @@ export function Contact() {
                     '--ripple-color': 'rgba(0, 225, 255, 0.4)'
                   } as React.CSSProperties}
                 >
-                  <a href={isFormValid ? mailtoLink : undefined} onClick={handleClick}>
+                  <a 
+                    href={isFormValid ? mailtoLink : undefined} 
+                    onClick={handleClick}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Send Message
                   </a>
                 </Button>
