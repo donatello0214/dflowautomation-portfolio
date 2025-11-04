@@ -3,7 +3,7 @@
     {
       "id": "project1",
       "description": "AI-Powered CRM Automation Project Image",
-      "imageUrl": "https://i.imgur.com/EaiwgjK.png",
+      "imageUrl": "https://i.imgur.com/8o9yF9u.png",
       "imageHint": "AI CRM"
     },
     {
@@ -89,6 +89,30 @@
       "description": "Testimonial author 3 portrait",
       "imageUrl": "https://images.unsplash.com/photo-1535643302794-19c3804b874b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGVyc29uJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYyMTg3MjcwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "person portrait"
+    },
+    {
+      "id": "project9",
+      "description": "n8n Customer Support Ticketing System",
+      "imageUrl": "https://images.unsplash.com/photo-1707061803305-58383ee49415?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzdXBwb3J0JTIwdGlja2V0aW5nfGVufDB8fHx8MTc2MjI3NjQ1Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "support ticketing"
+    },
+    {
+      "id": "project10",
+      "description": "Make.com Social Media Scheduler",
+      "imageUrl": "https://images.unsplash.com/photo-1761864294727-3c9f6b3e7425?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MXwxfHNlYXJjaHw4fHxzb2NpYWwlMjBtZWRpYXxlbnwwfHx8fDE3NjIyMTcyMjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "social media"
+    },
+    {
+      "id": "project11",
+      "description": "Zapier Real Estate Lead Router",
+      "imageUrl": "https://images.unsplash.com/photo-1605146769289-440113cc3d00?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxyZWFsJTIwZXN0YXRlfGVufDB8fHx8MTc2MjIwMzE5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "real estate"
+    },
+    {
+      "id": "project12",
+      "description": "GoHighLevel Membership Funnel",
+      "imageUrl": "https://images.unsplash.com/photo-1689100241391-2fcc75f3094b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtZW1iZXJzaGlwJTIwZnVubmVsfGVufDB8fHx8MTc2MjI3NjQ1Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "membership funnel"
     }
   ]
 }
