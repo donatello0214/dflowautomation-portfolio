@@ -47,6 +47,24 @@
       "description": "Epifanio Sufrir portrait",
       "imageUrl": "https://images.unsplash.com/photo-1624395213043-fa2e123b2656?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjIyMjQ5MzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "man portrait"
+    },
+    {
+      "id": "testimonial1",
+      "description": "Testimonial author 1 portrait",
+      "imageUrl": "https://picsum.photos/seed/201/100/100",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "testimonial2",
+      "description": "Testimonial author 2 portrait",
+      "imageUrl": "https://picsum.photos/seed/202/100/100",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "testimonial3",
+      "description": "Testimonial author 3 portrait",
+      "imageUrl": "https://picsum.photos/seed/203/100/100",
+      "imageHint": "person portrait"
     }
   ]
 }

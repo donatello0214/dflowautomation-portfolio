@@ -10,6 +10,7 @@ import { usePathname } from 'next/navigation';
 const baseNavItems = [
   { href: '#about', label: 'About' },
   { href: '#projects', label: 'Projects' },
+  { href: '#testimonials', label: 'Testimonials' },
   { href: '#blog', label: 'Blog' },
 ];
 

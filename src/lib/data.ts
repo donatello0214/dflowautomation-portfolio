@@ -20,6 +20,13 @@ export type BlogArticle = {
   image: (typeof PlaceHolderImages)[0];
 };
 
+export type Testimonial = {
+  name: string;
+  title: string;
+  quote: string;
+  image: (typeof PlaceHolderImages)[0];
+};
+
 export const projects: Project[] = [
   {
     id: '1',
@@ -131,4 +138,25 @@ export const blogArticles: BlogArticle[] = [
     `,
     image: PlaceHolderImages.find(p => p.id === 'blog3')!,
   },
+];
+
+export const testimonials: Testimonial[] = [
+  {
+    name: 'Sarah Johnson',
+    title: 'CEO, Innovate Inc.',
+    quote: 'DFlowAutomation revolutionized our lead management process. The AI-powered CRM automation is incredibly efficient, saving our sales team hours of manual work every day. Our conversion rates have improved by 40%!',
+    image: PlaceHolderImages.find(p => p.id === 'testimonial1')!,
+  },
+  {
+    name: 'Michael Chen',
+    title: 'Head of Operations, TechFront',
+    quote: 'The autonomous Slack responder has been a game-changer for our customer support. It handles over 60% of incoming queries, allowing our team to focus on high-priority issues. The integration with our knowledge base is seamless.',
+    image: PlaceHolderImages.find(p => p.id === 'testimonial2')!,
+  },
+  {
+    name: 'Jessica Rodriguez',
+    title: 'Marketing Director, Creative Solutions',
+    quote: 'The automated content pipeline is a masterpiece of efficiency. What used to be a two-week process now takes two days. The quality of the AI-generated content is consistently high, and the system just works.',
+    image: PlaceHolderImages.find(p => p.id === 'testimonial3')!,
+  }
 ];
