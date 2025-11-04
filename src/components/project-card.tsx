@@ -104,7 +104,7 @@ export function ProjectCard({ project }: { project: Project }) {
               alt={project.title}
               width={1920}
               height={1080}
-              className="max-w-[95vw] max-h-[95vh] w-auto h-auto object-contain transition-transform duration-300 ease-out animate-in zoom-in-75"
+              className="w-auto h-auto object-contain transition-transform duration-300 ease-out animate-in zoom-in-75 rounded-lg shadow-2xl"
             />
           </div>
         )}
