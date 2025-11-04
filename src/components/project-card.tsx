@@ -99,13 +99,15 @@ export function ProjectCard({ project }: { project: Project }) {
                 <X className="h-8 w-8" />
                 <span className="sr-only">Close</span>
             </button>
-            <Image
-              src={project.image.imageUrl}
-              alt={project.title}
-              width={1920}
-              height={1080}
-              className="w-auto h-auto object-contain transition-transform duration-300 ease-out animate-in zoom-in-75 rounded-lg shadow-2xl"
-            />
+            <div className="relative w-full h-full flex items-center justify-center">
+              <Image
+                src={project.image.imageUrl}
+                alt={project.title}
+                width={600}
+                height={400}
+                className="object-contain transition-transform duration-300 ease-out animate-in zoom-in-75 rounded-lg shadow-2xl scale-[3]"
+              />
+            </div>
           </div>
         )}
 
