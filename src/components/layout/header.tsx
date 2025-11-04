@@ -23,7 +23,10 @@ export function Header() {
         <Link href="/" className="mr-6 flex items-center space-x-2">
           
           <span className="font-bold font-headline text-xl">
-            DFlowAutomation
+            <span className="text-red-500 drop-shadow-[0_0_8px_rgba(255,50,50,0.8)]">D</span>
+            <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+              FlowAutomation
+            </span>
           </span>
         </Link>
         <nav className="hidden items-center gap-6 text-sm md:flex">
