@@ -41,11 +41,13 @@ export function Contact() {
   });
 
   function onSubmit(data: ContactFormValues) {
+    setIsSubmitting(true);
     const subject = encodeURIComponent(`Contact from ${data.name}`);
     const body = encodeURIComponent(`${data.message}\n\nFrom: ${data.name}\nEmail: ${data.email}`);
     const mailtoLink = `mailto:dflowautomation@gmail.com?subject=${subject}&body=${body}`;
     window.location.href = mailtoLink;
     form.reset();
+    setIsSubmitting(false);
   }
 
   return (
