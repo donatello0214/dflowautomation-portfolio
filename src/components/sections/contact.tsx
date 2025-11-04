@@ -34,7 +34,7 @@ export function Contact() {
       email: '',
       message: '',
     },
-    mode: 'onChange', // Validate on change
+    mode: 'onChange',
   });
 
   const { name, email, message } = form.watch();
@@ -47,7 +47,6 @@ export function Contact() {
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     if (!isFormValid) {
       e.preventDefault();
-      // Manually trigger validation to show errors
       form.trigger();
       toast({
         variant: 'destructive',
@@ -56,7 +55,6 @@ export function Contact() {
       });
     }
   };
-
 
   return (
     <section id="contact" className="bg-background/80 backdrop-blur-sm">
@@ -120,7 +118,6 @@ export function Contact() {
               <div className="flex justify-end">
                 <Button 
                   asChild
-                  disabled={!isFormValid}
                   className={cn(
                     "relative overflow-hidden bg-primary text-primary-foreground transition-all duration-300 hover:bg-primary/90 hover:shadow-lg hover:shadow-cyan-500/50",
                     "active:scale-95",
