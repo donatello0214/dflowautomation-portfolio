@@ -62,7 +62,7 @@ const HolographicBackground = () => {
       const particleColor = theme === 'dark' ? 0x00e7ff : 0x0077ff;
       const material = new THREE.PointsMaterial({
         color: particleColor,
-        size: 2,
+        size: 1.5,
         blending: THREE.AdditiveBlending,
         transparent: true,
       });
@@ -72,7 +72,7 @@ const HolographicBackground = () => {
       const lineMaterial = new THREE.LineBasicMaterial({
         color: particleColor,
         transparent: true,
-        opacity: 0.25,
+        opacity: 0.15,
       });
       const lineGeometry = new THREE.BufferGeometry();
       linesMesh = new THREE.LineSegments(lineGeometry, lineMaterial);
@@ -86,9 +86,9 @@ const HolographicBackground = () => {
         0.4,
         0.85
       );
-      bloomPass.threshold = 0;
-      bloomPass.strength = theme === 'dark' ? 1.4 : 0.8;
-      bloomPass.radius = 0;
+      bloomPass.threshold = 0.1;
+      bloomPass.strength = theme === 'dark' ? 0.8 : 0.4;
+      bloomPass.radius = 0.2;
 
       composer = new EffectComposer(renderer);
       composer.addPass(renderScene);
@@ -134,7 +134,7 @@ const HolographicBackground = () => {
 
       const hue = (scrollY * 0.1 + Date.now() * 0.01) % 360;
       const saturation = theme === 'dark' ? '100%' : '80%';
-      const lightness = theme === 'dark' ? '60%' : '50%';
+      const lightness = theme === 'dark' ? '55%' : '50%';
       const color = new THREE.Color(`hsl(${hue}, ${saturation}, ${lightness})`);
       (particles.material as THREE.PointsMaterial).color = color;
       (linesMesh.material as THREE.LineBasicMaterial).color = color;
