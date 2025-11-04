@@ -1,5 +1,7 @@
 import { projects } from '@/lib/data';
 import { ProjectCard } from '../project-card';
+import { Button } from '../ui/button';
+import Link from 'next/link';
 
 export function Projects() {
   return (
@@ -17,6 +19,11 @@ export function Projects() {
           {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
+        </div>
+        <div className="mt-12 text-center">
+          <Button asChild size="lg">
+            <Link href="/projects">View All Projects</Link>
+          </Button>
         </div>
       </div>
     </section>
