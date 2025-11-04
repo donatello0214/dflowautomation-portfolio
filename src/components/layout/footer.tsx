@@ -14,8 +14,8 @@ export function Footer() {
             </span>
           </span>
         </div>
-        <p className="text-center text-sm text-primary-foreground/60">
-          © {new Date().getFullYear()}{' '}
+        <p className="text-center text-sm">
+          <span className="text-primary-foreground/60">© {new Date().getFullYear()} </span>
           <span className="font-headline text-sm font-bold">
             <span className="text-red-500 drop-shadow-[0_0_8px_rgba(255,50,50,0.8)]">
               D
