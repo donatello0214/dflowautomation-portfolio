@@ -3,67 +3,67 @@
     {
       "id": "project1",
       "description": "AI-Powered CRM Automation Project Image",
-      "imageUrl": "/images/project1.jpg",
+      "imageUrl": "https://picsum.photos/seed/project1/600/400",
       "imageHint": "AI CRM"
     },
     {
       "id": "project2",
       "description": "Autonomous Slack Responder Project Image",
-      "imageUrl": "/images/project2.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1659018966820-de07c94e0d01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxBSSUyMGNoYXRib3R8ZW58MHx8fHwxNzYyMjIyOTYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "AI chatbot"
     },
     {
       "id": "project3",
       "description": "Automated Content Pipeline Project Image",
-      "imageUrl": "/images/project3.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1673115810074-8944eba483f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhdXRvbWF0aW9uJTIwcGlwZWxpbmV8ZW58MHx8fHwxNzYyMjEwOTc0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "automation pipeline"
     },
     {
       "id": "project4",
       "description": "GCP Data Processing Workflow Project Image",
-      "imageUrl": "/images/project4.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1667372283496-893f0b1e7c16?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjbG91ZCUyMGRhdGF8ZW58MHx8fHwxNzYyMTY5NjgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "cloud data"
     },
     {
       "id": "blog1",
       "description": "AI Agents and Workflow Automation Blog Image",
-      "imageUrl": "/images/blog1.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1625314887424-9f190599bd56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxBSSUyMHJvYm90fGVufDB8fHx8MTc2MjI0Nzc2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "AI robot"
     },
     {
       "id": "blog2",
       "description": "The Future of CRM Blog Image",
-      "imageUrl": "/images/blog2.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1752959828455-7bdeb06198b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmdXR1cmlzdGljJTIwZGFzaGJvYXJkfGVufDB8fHx8MTc2MjE5MDkwMnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "futuristic dashboard"
     },
     {
       "id": "blog3",
       "description": "Building Autonomous Systems Blog Image",
-      "imageUrl": "/images/blog3.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1709546698483-ab379d159048?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzeXN0ZW0lMjBhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzYyMTU0NDI3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "system architecture"
     },
     {
       "id": "about",
       "description": "Epifanio Sufrir portrait",
-      "imageUrl": "/images/about.png",
+      "imageUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjIyMjQ5MzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "man portrait"
     },
     {
       "id": "testimonial1",
       "description": "Testimonial author 1 portrait",
-      "imageUrl": "/images/testimonial1.png",
+      "imageUrl": "https://images.unsplash.com/photo-1557053910-d9eadeed1c58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MjI0NDMxOHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "woman portrait"
     },
     {
       "id": "testimonial2",
       "description": "Testimonial author 2 portrait",
-      "imageUrl": "/images/testimonial2.png",
+      "imageUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjIyMjQ5MzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "man portrait"
     },
     {
       "id": "testimonial3",
       "description": "Testimonial author 3 portrait",
-      "imageUrl": "/images/testimonial3.png",
+      "imageUrl": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjIxODcyNzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "person portrait"
     }
   ]
