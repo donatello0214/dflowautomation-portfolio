@@ -8,10 +8,11 @@ import {
   DialogTitle,
   DialogTrigger,
   DialogDescription,
+  DialogClose,
 } from '@/components/ui/dialog';
 import Image from 'next/image';
 import { Button } from './ui/button';
-import { ArrowUpRight, ExternalLink } from 'lucide-react';
+import { ArrowUpRight, MessageCircle } from 'lucide-react';
 import { Badge } from './ui/badge';
 
 export function ProjectCard({ project }: { project: Project }) {
@@ -73,11 +74,13 @@ export function ProjectCard({ project }: { project: Project }) {
               ))}
             </div>
           </div>
-          <Button asChild>
-            <a href={project.link} target="_blank" rel="noopener noreferrer">
-              View Project <ExternalLink className="ml-2 h-4 w-4" />
-            </a>
-          </Button>
+          <DialogClose asChild>
+            <Button asChild>
+              <a href="#contact">
+                Contact Us <MessageCircle className="ml-2 h-4 w-4" />
+              </a>
+            </Button>
+          </DialogClose>
         </div>
       </DialogContent>
     </Dialog>
