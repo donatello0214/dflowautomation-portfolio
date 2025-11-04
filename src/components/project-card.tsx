@@ -76,7 +76,7 @@ export function ProjectCard({ project }: { project: Project }) {
           </div>
           <DialogClose asChild>
             <Button asChild>
-              <a href="#contact">
+              <a href="/#contact">
                 Get in Touch <MessageCircle className="ml-2 h-4 w-4" />
               </a>
             </Button>
