@@ -35,7 +35,7 @@ export function ProjectCard({ project }: { project: Project }) {
               data-ai-hint={project.image.imageHint}
             />
           </div>
-          <div className="relative z-20 flex h-full flex-col justify-end p-6 text-white">
+          <div className="relative z-20 flex h-full flex-col justify-end p-6">
             <h3 className="mb-2 font-headline text-2xl font-bold text-white">
               {project.title}
             </h3>
@@ -84,7 +84,7 @@ export function ProjectCard({ project }: { project: Project }) {
             </div>
           </div>
           <DialogClose asChild>
-            <Button asChild>
+            <Button asChild className="text-blue-500">
               <a href="/#contact">
                 Get in Touch <MessageCircle className="ml-2 h-4 w-4" />
               </a>
