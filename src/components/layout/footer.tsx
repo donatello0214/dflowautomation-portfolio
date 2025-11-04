@@ -13,7 +13,7 @@ export function Footer() {
               FlowAutomation
             </span>
           </span>
-          <p className="text-xs text-primary-foreground/60">Automate. Integrate. Elevate.</p>
+          <p className="text-xs font-bold text-white">Automate. Integrate. Elevate.</p>
         </div>
         <p className="text-center text-sm">
           <span className="text-primary-foreground/60 dark:text-white">© {new Date().getFullYear()} </span>
