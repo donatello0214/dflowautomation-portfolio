@@ -31,14 +31,8 @@ export const Icons = {
         </svg>
     ),
     Make: (props: React.SVGProps<SVGSVGElement>) => (
-        <svg {...props} viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <linearGradient id="make-gradient" x1="0" y1="16" x2="32" y2="16" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#FF00FF" />
-                    <stop offset="1" stopColor="#8F00FF" />
-                </linearGradient>
-            </defs>
-            <path fill="url(#make-gradient)" d="M16.1,0C7.2,0,0,7.2,0,16.1C0,25,7.2,32.2,16.1,32.2c8.9,0,16.1-7.2,16.1-16.1C32.2,7.2,25,0,16.1,0z M25.3,18.4 c-0.6,0.3-1.3,0.5-2,0.5c-2.3,0-4.2-1.9-4.2-4.2s1.9-4.2,4.2-4.2c0.7,0,1.4,0.2,2,0.5c0.5-2.8,0.2-5.7-0.8-8.4 c-0.2-0.5-0.7-0.7-1.2-0.6c-3.1,0.9-5.9,2.8-7.9,5.2c-2.5,3-4,6.7-4,10.6c0,0.8,0.1,1.6,0.2,2.4c0.1,0.5,0.6,0.8,1,0.8 c0.1,0,0.1,0,0.2,0c0.4-0.1,0.7-0.5,0.7-0.9c-0.1-0.7-0.2-1.5-0.2-2.3c0-3.3,1.3-6.5,3.4-8.9c1.7-2,3.9-3.5,6.4-4.2 C24.5,13.6,25.2,15.9,25.3,18.4z" />
+        <svg {...props} viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
         </svg>
     ),
     n8n: (props: React.SVGProps<SVGSVGElement>) => (
@@ -77,3 +71,5 @@ export const Icons = {
         </svg>
     ),
 };
+
+    
