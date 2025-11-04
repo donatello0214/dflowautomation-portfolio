@@ -14,8 +14,8 @@ import {
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
-import { useToast } from '@/hooks/use-toast';
 import { cn } from '@/lib/utils';
+import { useToast } from '@/hooks/use-toast';
 
 const contactFormSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters.'),
@@ -27,7 +27,6 @@ type ContactFormValues = z.infer<typeof contactFormSchema>;
 
 export function Contact() {
   const { toast } = useToast();
-
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
@@ -35,26 +34,25 @@ export function Contact() {
       email: '',
       message: '',
     },
-    mode: 'onChange',
+    mode: 'onChange', // Validate on change
   });
 
-  const handleClick = async () => {
-    const isValid = await form.trigger();
-    if (!isValid) {
+  const { name, email, message } = form.watch();
+  const isFormValid = form.formState.isValid;
+
+  const mailtoLink = `mailto:dflowautomation@gmail.com?subject=${encodeURIComponent(
+    `Contact from ${name}`
+  )}&body=${encodeURIComponent(`${message}\n\nFrom: ${name}\nEmail: ${email}`)}`;
+
+  const handleClick = (e: React.MouseEvent) => {
+    if (!isFormValid) {
+      e.preventDefault();
       toast({
         variant: 'destructive',
         title: 'Incomplete Form',
         description: 'Please fill out all required fields before sending.',
       });
-      return;
     }
-
-    const { name, email, message } = form.getValues();
-    const mailtoLink = `mailto:dflowautomation@gmail.com?subject=${encodeURIComponent(
-      `Contact from ${name}`
-    )}&body=${encodeURIComponent(`${message}\n\nFrom: ${name}\nEmail: ${email}`)}`;
-    
-    window.location.href = mailtoLink;
   };
 
 
@@ -119,18 +117,20 @@ export function Contact() {
               />
               <div className="flex justify-end">
                 <Button 
-                  type="button"
-                  onClick={handleClick}
+                  asChild
                   className={cn(
                     "relative overflow-hidden bg-primary text-primary-foreground transition-all duration-300 hover:bg-primary/90 hover:shadow-lg hover:shadow-cyan-500/50",
                     "active:scale-95",
-                    "dark:bg-cyan-400 dark:text-cyan-950 dark:hover:bg-cyan-300"
+                    "dark:bg-cyan-400 dark:text-cyan-950 dark:hover:bg-cyan-300",
+                    !isFormValid && "cursor-not-allowed opacity-50"
                   )}
                   style={{
                     '--ripple-color': 'rgba(0, 225, 255, 0.4)'
                   } as React.CSSProperties}
                 >
-                  Send Message
+                  <a href={isFormValid ? mailtoLink : undefined} onClick={handleClick}>
+                    Send Message
+                  </a>
                 </Button>
               </div>
             </form>
