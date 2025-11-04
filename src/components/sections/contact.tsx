@@ -103,7 +103,7 @@ export function Contact() {
               <WhatsAppIcon className="h-8 w-8" />
               <span className="sr-only">WhatsApp</span>
             </a>
-            <a href="https://www.linkedin.com/in/epifaniods/" target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-accent transition-colors">
+            <a href="https://www.linkedin.com/in/don-sufrir-059405390/" target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-accent transition-colors">
               <Linkedin className="h-8 w-8" />
               <span className="sr-only">LinkedIn</span>
             </a>
@@ -212,3 +212,5 @@ export function Contact() {
     </section>
   );
 }
+
+    

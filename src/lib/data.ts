@@ -169,3 +169,6 @@ export const testimonials: Testimonial[] = [
 ];
 
 export const techLogos: TechLogo[] = techStack;
+
+
+    
