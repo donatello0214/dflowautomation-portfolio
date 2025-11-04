@@ -24,7 +24,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet" />
       </head>
-      <body className={cn('font-body antialiased', process.env.NODE_ENV === 'development' ? 'debug-screens' : '')}>
+      <body suppressHydrationWarning={true} className={cn('font-body antialiased', process.env.NODE_ENV === 'development' ? 'debug-screens' : '')}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
