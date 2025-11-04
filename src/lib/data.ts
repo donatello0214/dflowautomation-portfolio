@@ -74,9 +74,9 @@ export const projects: Project[] = [
   {
     id: '5',
     title: 'AI Math Solver & Web Researcher on Messenger',
-    description: 'Automated generation of financial reports from multiple data sources.',
-    details: 'Developed an n8n workflow that consolidates data from QuickBooks, Stripe, and a PostgreSQL database to generate weekly and monthly financial performance reports. The workflow includes AI-driven anomaly detection which flags unusual transactions for review. Reports are automatically formatted and emailed to stakeholders, providing timely and accurate financial insights.',
-    tools: ['n8n', 'QuickBooks API', 'Stripe API', 'PostgreSQL', 'OpenAI'],
+    description: 'Text based, Chatgpt-like Math solver for both basic and complex problems and web research.',
+    details: 'This n8n workflow connects Facebook Messenger with advanced AI capabilities to solve math problems and perform real-time web research. When users send questions, it intelligently interprets them, computes accurate solutions, gathers relevant online references, and delivers concise, conversational, and multi-lingual responses — providing instant, interactive, and context-aware academic or informational assistance directly in Messenger.',
+    tools: ['n8n', 'Google Gemini API', 'FB Messenger API', 'Google Sheets'],
     image: PlaceHolderImages.find(p => p.id === 'project5')!,
     link: '#',
   },

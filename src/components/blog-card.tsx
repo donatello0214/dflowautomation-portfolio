@@ -29,10 +29,10 @@ export function BlogCard({ article }: { article: BlogArticle }) {
             />
           </div>
           <div className="relative z-20 flex h-full flex-col justify-end p-6 text-white">
-            <h3 className="mb-2 font-headline text-2xl font-bold">
+            <h3 className="mb-2 font-headline text-2xl font-bold text-white">
               {article.title}
             </h3>
-            <p className="text-sm text-primary-foreground/80">{article.excerpt}</p>
+            <p className="text-sm text-white/80">{article.excerpt}</p>
           </div>
           <div className="absolute top-4 right-4 z-20 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
             <Button size="icon" variant="secondary" className="rounded-full">
