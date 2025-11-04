@@ -47,7 +47,7 @@ export default function ProjectsPage() {
     return (
       <div className="mb-16">
         <h2 className="font-headline mb-8 text-3xl font-bold md:text-4xl">
-          {title} Automations
+          {title}
         </h2>
         {projects.length > 0 ? (
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">

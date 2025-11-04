@@ -25,7 +25,7 @@ export const projects: Project[] = [
     id: '1',
     title: 'AI-Powered CRM Automation',
     description: 'Automated lead scoring and contact segmentation for Pipedrive.',
-    details: 'Developed a custom AI agent that integrates with Pipedrive CRM. The system analyzes incoming leads, scores them based on custom criteria, and automatically segments contacts for targeted marketing campaigns. This resulted in a 40% increase in lead conversion rates.',
+    details: 'This project involved developing a sophisticated AI agent that integrates deeply with the Pipedrive CRM API. The system was architected to handle a high volume of incoming leads from various marketing channels. Using a custom-trained model on OpenAI, the agent performs real-time lead analysis, scoring each lead based on over 50 data points, including engagement history, firmographic data, and behavioral patterns. A key feature is the dynamic segmentation engine, which automatically assigns contacts to specific, targeted marketing campaigns within Pipedrive, significantly improving personalization. The implementation of this system led to a verifiable 40% increase in lead conversion rates and reduced manual lead processing time by over 95%.',
     tools: ['OpenAI', 'Pipedrive API', 'n8n', 'Firebase'],
     image: PlaceHolderImages.find(p => p.id === 'project1')!,
     link: '#',
@@ -34,7 +34,7 @@ export const projects: Project[] = [
     id: '2',
     title: 'Autonomous Slack Responder',
     description: 'A smart AI agent for handling customer queries in Slack channels.',
-    details: 'Built an autonomous AI agent that monitors specific Slack channels, understands customer queries using natural language processing, and provides instant, accurate responses by pulling data from a Notion knowledge base. The agent can also escalate complex issues to human support.',
+    details: 'For this project, I built a fully autonomous AI agent designed to function as a first-line support specialist within a busy Slack workspace. The agent uses advanced Natural Language Processing (NLP) to understand the intent and sentiment of customer queries in real-time. It seamlessly integrates with a Notion knowledge base, structured as a vector database, to fetch and deliver accurate, context-aware responses instantly. A critical feature is its intelligent escalation protocol; when the agent determines a query is too complex or emotionally charged, it automatically summarizes the conversation, gathers relevant user data, and triages it to the appropriate human support tier, ensuring a smooth handoff and efficient resolution.',
     tools: ['Slack API', 'Notion API', 'OpenAI', 'Make.com'],
     image: PlaceHolderImages.find(p => p.id === 'project2')!,
     link: '#',
@@ -43,16 +43,16 @@ export const projects: Project[] = [
     id: '3',
     title: 'Automated Content Pipeline',
     description: 'Streamlined content creation from Airtable to Webflow.',
-    details: 'Designed a fully automated workflow that takes content ideas from an Airtable base, uses AI to generate draft articles, awaits approval, and then automatically publishes the final content to a Webflow blog. The system also handles image selection and SEO optimization.',
+    details: 'I designed and implemented a complete end-to-end content creation and publishing pipeline. The workflow begins in Airtable, where content strategists outline ideas and keywords. A Zapier workflow triggers an AI content generation service (powered by OpenAI) to create detailed article drafts. These drafts are then placed in a designated "review" state in Airtable. Once an editor approves the content, the workflow automatically selects a relevant stock image using an AI service, optimizes the article for SEO with meta tags and descriptions, and publishes the final piece directly to the company\'s Webflow blog via the Webflow API. This system reduced the average content lifecycle from two weeks to just two days.',
     tools: ['Airtable', 'OpenAI', 'Zapier', 'Webflow API'],
     image: PlaceHolderImages.find(p => p.id === 'project3')!,
     link: '#',
   },
     {
-    id: '4',
+    id: '4' ,
     title: 'GCP Data Processing Workflow',
     description: 'Serverless data processing and integration on Google Cloud.',
-    details: 'Architected a serverless workflow on Google Cloud Platform to process large datasets. The system uses Cloud Functions to trigger on new data uploads, performs complex transformations, and integrates the processed data with external analytics services for real-time dashboarding.',
+    details: 'I architected a highly scalable, serverless data processing workflow on Google Cloud Platform. The system is designed to handle terabytes of incoming data from IoT devices. Using Google Cloud Functions, new data uploaded to a Cloud Storage bucket triggers a processing pipeline. This pipeline involves data validation, cleaning, normalization, and enrichment using BigQuery for complex analytical queries. Finally, the processed, structured data is pushed to external partner APIs and internal real-time analytics dashboards, providing immediate business intelligence. The entire architecture is event-driven, ensuring efficiency and cost-effectiveness by only using resources when data is actively being processed.',
     tools: ['Google Cloud', 'Firebase', 'BigQuery', 'Python'],
     image: PlaceHolderImages.find(p => p.id === 'project4')!,
     link: '#',
@@ -132,5 +132,3 @@ export const blogArticles: BlogArticle[] = [
     image: PlaceHolderImages.find(p => p.id === 'blog3')!,
   },
 ];
-
-    
