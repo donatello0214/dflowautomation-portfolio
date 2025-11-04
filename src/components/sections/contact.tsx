@@ -28,6 +28,11 @@ import { useState } from 'react';
 import { Mail, MailCheck, Loader2, Linkedin, Github } from 'lucide-react';
 import { sendContactEmail } from '@/ai/flows/send-contact-email';
 import { useToast } from '@/hooks/use-toast';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from '@/components/ui/tooltip';
 
 const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
     <svg
@@ -99,22 +104,50 @@ export function Contact() {
           </p>
         </div>
         <div className="mb-8 flex justify-center gap-6">
-            <a href="https://wa.me/639954470799" target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-accent transition-colors">
-              <WhatsAppIcon className="h-8 w-8" />
-              <span className="sr-only">WhatsApp</span>
-            </a>
-            <a href="https://www.linkedin.com/in/don-sufrir-059405390/" target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-accent transition-colors">
-              <Linkedin className="h-8 w-8" />
-              <span className="sr-only">LinkedIn</span>
-            </a>
-            <a href="https://github.com/dflowautomation" target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-accent transition-colors">
-              <Github className="h-8 w-8" />
-              <span className="sr-only">GitHub</span>
-            </a>
-            <a href="mailto:dflowautomation@gmail.com" className="text-foreground/60 hover:text-accent transition-colors">
-              <Mail className="h-8 w-8" />
-              <span className="sr-only">Email</span>
-            </a>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <a href="https://wa.me/639954470799" target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-accent transition-colors">
+                  <WhatsAppIcon className="h-8 w-8" />
+                  <span className="sr-only">WhatsApp</span>
+                </a>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>+63 995 447 0799</p>
+              </TooltipContent>
+            </Tooltip>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <a href="https://www.linkedin.com/in/don-sufrir-059405390/" target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-accent transition-colors">
+                  <Linkedin className="h-8 w-8" />
+                  <span className="sr-only">LinkedIn</span>
+                </a>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>linkedin.com/in/don-sufrir-059405390/</p>
+              </TooltipContent>
+            </Tooltip>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <a href="https://github.com/dflowautomation" target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-accent transition-colors">
+                  <Github className="h-8 w-8" />
+                  <span className="sr-only">GitHub</span>
+                </a>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>github.com/dflowautomation</p>
+              </TooltipContent>
+            </Tooltip>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <a href="mailto:dflowautomation@gmail.com" className="text-foreground/60 hover:text-accent transition-colors">
+                  <Mail className="h-8 w-8" />
+                  <span className="sr-only">Email</span>
+                </a>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>dflowautomation@gmail.com</p>
+              </TooltipContent>
+            </Tooltip>
         </div>
         <div className="relative rounded-lg border border-accent/20 bg-card p-8 shadow-lg shadow-accent/20">
           <Form {...form}>
