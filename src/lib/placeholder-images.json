@@ -1,3 +1,52 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "project1",
+      "description": "AI-Powered CRM Automation Project Image",
+      "imageUrl": "https://picsum.photos/seed/101/600/400",
+      "imageHint": "AI CRM"
+    },
+    {
+      "id": "project2",
+      "description": "Autonomous Slack Responder Project Image",
+      "imageUrl": "https://images.unsplash.com/photo-1684369175833-4b445ad6bfb5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxBSSUyMGNoYXRib3R8ZW58MHx8fHwxNzYyMjIyOTYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "AI chatbot"
+    },
+    {
+      "id": "project3",
+      "description": "Automated Content Pipeline Project Image",
+      "imageUrl": "https://images.unsplash.com/photo-1568578322186-a0cb6cdeb9ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YXV0b21hdGlvbiUyMHBpcGVsaW5lfGVufDB8fHx8MTc2MjIxMDk3NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "automation pipeline"
+    },
+    {
+      "id": "project4",
+      "description": "GCP Data Processing Workflow Project Image",
+      "imageUrl": "https://images.unsplash.com/photo-1667372283545-1261fb5c427a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjbG91ZCUyMGRhdGF8ZW58MHx8fHwxNzYyMTY5NjgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cloud data"
+    },
+    {
+      "id": "blog1",
+      "description": "AI Agents and Workflow Automation Blog Image",
+      "imageUrl": "https://images.unsplash.com/photo-1625314887424-9f190599bd56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxBSSUyMHJvYm90fGVufDB8fHx8MTc2MjI0Nzc2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "AI robot"
+    },
+    {
+      "id": "blog2",
+      "description": "The Future of CRM Blog Image",
+      "imageUrl": "https://images.unsplash.com/photo-1639060015191-9d83063eab2a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZnV0dXJpc3RpYyUyMGRhc2hib2FyZHxlbnwwfHx8fDE3NjIxOTA5MDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "futuristic dashboard"
+    },
+    {
+      "id": "blog3",
+      "description": "Building Autonomous Systems Blog Image",
+      "imageUrl": "https://images.unsplash.com/photo-1558388576-ed7197fef81e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzeXN0ZW0lMjBhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzYyMjQ3NzY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "system architecture"
+    },
+    {
+      "id": "about",
+      "description": "Epifanio Sufrir portrait",
+      "imageUrl": "https://images.unsplash.com/photo-1624395213043-fa2e123b2656?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjIyMjQ5MzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait"
+    }
+  ]
 }
