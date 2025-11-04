@@ -23,8 +23,7 @@ export function Footer() {
             <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
               FlowAutomation
             </span>
-          </span>{' '}
-          — Built by Epifanio Sufrir with AI precision.
+          </span>
         </p>
         <ThemeToggle />
       </div>
