@@ -26,7 +26,7 @@ import {
   AlertDialogTitle,
 } from '@/components/ui/alert-dialog';
 import { useState } from 'react';
-import { MailCheck } from 'lucide-react';
+import { MailCheck, Loader2 } from 'lucide-react';
 
 const contactFormSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters.'),
@@ -39,6 +39,8 @@ type ContactFormValues = z.infer<typeof contactFormSchema>;
 export function Contact() {
   const { toast } = useToast();
   const [showConfirmation, setShowConfirmation] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
@@ -49,9 +51,15 @@ export function Contact() {
     mode: 'onChange',
   });
 
-  const onSubmit = (values: ContactFormValues) => {
+  const onSubmit = async (values: ContactFormValues) => {
+    setIsSubmitting(true);
     // Here you would typically send the form data to a server
     console.log('Form submitted:', values);
+    
+    // Simulate network request
+    await new Promise(resolve => setTimeout(resolve, 1000));
+
+    setIsSubmitting(false);
     setShowConfirmation(true);
     form.reset();
   };
@@ -118,6 +126,7 @@ export function Contact() {
               <div className="flex justify-end">
                 <Button 
                   type="submit"
+                  disabled={isSubmitting}
                   className={cn(
                     "relative overflow-hidden bg-primary text-primary-foreground transition-all duration-300 hover:bg-primary/90 hover:shadow-lg hover:shadow-cyan-500/50",
                     "active:scale-95",
@@ -127,7 +136,14 @@ export function Contact() {
                     '--ripple-color': 'rgba(0, 225, 255, 0.4)'
                   } as React.CSSProperties}
                 >
-                  Send Message
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                      Sending...
+                    </>
+                  ) : (
+                    'Send Message'
+                  )}
                 </Button>
               </div>
             </form>
