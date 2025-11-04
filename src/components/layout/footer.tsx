@@ -4,7 +4,7 @@ export function Footer() {
   return (
     <footer className="relative z-10 w-full border-t border-white/10 bg-transparent py-6 text-primary-foreground">
       <div className="container flex flex-col items-center justify-between gap-4 sm:flex-row">
-        <div className="flex items-center gap-2">
+        <div className="flex flex-col items-center gap-1 sm:items-start">
           <span className="font-headline text-lg font-bold">
             <span className="text-red-500 drop-shadow-[0_0_8px_rgba(255,50,50,0.8)]">
               D
@@ -13,6 +13,7 @@ export function Footer() {
               FlowAutomation
             </span>
           </span>
+          <p className="text-xs text-primary-foreground/60">Automate. Integrate. Elevate.</p>
         </div>
         <p className="text-center text-sm">
           <span className="text-primary-foreground/60 dark:text-white">© {new Date().getFullYear()} </span>
