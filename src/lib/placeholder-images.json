@@ -3,13 +3,13 @@
     {
       "id": "project1",
       "description": "AI-Powered CRM Automation Project Image",
-      "imageUrl": "/images/images/n8n-project1.jpg",
+      "imageUrl": "/images/images/n8-project1.png",
       "imageHint": "AI CRM"
     },
     {
       "id": "project2",
       "description": "Autonomous Slack Responder Project Image",
-      "imageUrl": "https://images.unsplash.com/photo-1684493735679-359868df0e18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8QUklMjBjaGF0Ym90fGVufDB8fHx8MTc2MjIyMjk2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/images/n8n-project2.png",
       "imageHint": "AI chatbot"
     },
     {
@@ -26,9 +26,9 @@
     },
     {
       "id": "project5",
-      "description": "Dynamic n8n Financial Reporting",
-      "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmaW5hbmNpYWwlMjByZXBvcnR8ZW58MHx8fHwxNzYyMjU0MjAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "financial report"
+      "description": "AI Math Solver & Web Researcher on Messenger",
+      "imageUrl": "/images/images/n8n-project2.png",
+      "imageHint": "OpenGPT"
     },
     {
       "id": "project6",

@@ -73,7 +73,7 @@ export const projects: Project[] = [
   },
   {
     id: '5',
-    title: 'Dynamic n8n Financial Reporting',
+    title: 'AI Math Solver & Web Researcher on Messenger',
     description: 'Automated generation of financial reports from multiple data sources.',
     details: 'Developed an n8n workflow that consolidates data from QuickBooks, Stripe, and a PostgreSQL database to generate weekly and monthly financial performance reports. The workflow includes AI-driven anomaly detection which flags unusual transactions for review. Reports are automatically formatted and emailed to stakeholders, providing timely and accurate financial insights.',
     tools: ['n8n', 'QuickBooks API', 'Stripe API', 'PostgreSQL', 'OpenAI'],
