@@ -44,7 +44,7 @@ export function Contact() {
     `Contact from ${name}`
   )}&body=${encodeURIComponent(`${message}\n\nFrom: ${name}\nEmail: ${email}`)}`;
 
-  const handleClick = (e: React.MouseEvent) => {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     if (!isFormValid) {
       e.preventDefault();
       toast({
@@ -118,6 +118,7 @@ export function Contact() {
               <div className="flex justify-end">
                 <Button 
                   asChild
+                  disabled={!isFormValid}
                   className={cn(
                     "relative overflow-hidden bg-primary text-primary-foreground transition-all duration-300 hover:bg-primary/90 hover:shadow-lg hover:shadow-cyan-500/50",
                     "active:scale-95",
