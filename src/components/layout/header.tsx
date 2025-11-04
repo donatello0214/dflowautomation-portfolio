@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { ThemeToggle } from '../theme-toggle';
 import { usePathname } from 'next/navigation';
 
-const navItems = [
+const baseNavItems = [
   { href: '#about', label: 'About' },
   { href: '#projects', label: 'Projects' },
   { href: '#blog', label: 'Blog' },
@@ -23,6 +23,12 @@ export function Header() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
+
+  const navItems = baseNavItems.map(item => ({
+    ...item,
+    href: pathname === '/' ? item.href : `/${item.href}`,
+  }));
+
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
