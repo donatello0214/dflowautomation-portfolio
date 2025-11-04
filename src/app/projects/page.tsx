@@ -8,7 +8,7 @@ export default function ProjectsPage() {
       <FadeIn>
         <div className="mb-12 text-center">
           <h1 className="font-headline text-4xl font-bold md:text-5xl">
-            Our Portfolio
+            Project Portfolio
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-foreground/80">
             A comprehensive look at our AI-powered automation and integration solutions.
