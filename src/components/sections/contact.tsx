@@ -99,15 +99,15 @@ export function Contact() {
           </p>
         </div>
         <div className="mb-8 flex justify-center gap-6">
-            <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-accent transition-colors">
+            <a href="https://wa.me/5551999999999" target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-accent transition-colors">
               <WhatsAppIcon className="h-8 w-8" />
               <span className="sr-only">WhatsApp</span>
             </a>
-            <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-accent transition-colors">
+            <a href="https://www.linkedin.com/in/epifaniods/" target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-accent transition-colors">
               <Linkedin className="h-8 w-8" />
               <span className="sr-only">LinkedIn</span>
             </a>
-            <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-accent transition-colors">
+            <a href="https://github.com/dflowautomation" target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-accent transition-colors">
               <Github className="h-8 w-8" />
               <span className="sr-only">GitHub</span>
             </a>
