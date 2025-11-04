@@ -15,7 +15,6 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
-import { useToast } from '@/hooks/use-toast';
 import {
   AlertDialog,
   AlertDialogAction,
@@ -27,6 +26,8 @@ import {
 } from '@/components/ui/alert-dialog';
 import { useState } from 'react';
 import { MailCheck, Loader2 } from 'lucide-react';
+import { sendContactEmail } from '@/ai/flows/send-contact-email';
+import { useToast } from '@/hooks/use-toast';
 
 const contactFormSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters.'),
@@ -53,15 +54,20 @@ export function Contact() {
 
   const onSubmit = async (values: ContactFormValues) => {
     setIsSubmitting(true);
-    // Here you would typically send the form data to a server
-    console.log('Form submitted:', values);
-    
-    // Simulate network request
-    await new Promise(resolve => setTimeout(resolve, 1000));
-
-    setIsSubmitting(false);
-    setShowConfirmation(true);
-    form.reset();
+    try {
+      await sendContactEmail(values);
+      setShowConfirmation(true);
+      form.reset();
+    } catch (error) {
+      console.error('Failed to send email:', error);
+      toast({
+        variant: 'destructive',
+        title: 'Uh oh! Something went wrong.',
+        description: 'There was a problem sending your message. Please try again later.',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
