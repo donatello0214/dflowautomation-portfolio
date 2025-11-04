@@ -16,6 +16,7 @@ import { ArrowUpRight, MessageCircle, X } from 'lucide-react';
 import { Badge } from './ui/badge';
 import { useState } from 'react';
 import { cn } from '@/lib/utils';
+import { ScrollArea, ScrollBar } from './ui/scroll-area';
 
 export function ProjectCard({ project }: { project: Project }) {
   const [isZoomed, setIsZoomed] = useState(false);
@@ -49,16 +50,20 @@ export function ProjectCard({ project }: { project: Project }) {
       </DialogTrigger>
       <DialogContent className="max-w-3xl border-accent/20 bg-background/80 shadow-lg shadow-accent/20 backdrop-blur-lg sm:rounded-lg max-h-[90vh] flex flex-col">
         <DialogHeader>
-          <div className="mb-4 aspect-video w-full overflow-hidden rounded-lg cursor-zoom-in" onClick={() => setIsZoomed(true)}>
-            <Image
-              src={project.image.imageUrl}
-              alt={project.title}
-              width={600}
-              height={400}
-              className="h-full w-full object-cover"
-              data-ai-hint={project.image.imageHint}
-            />
-          </div>
+          <ScrollArea className="w-full whitespace-nowrap rounded-lg border">
+              <div className="mb-4 aspect-video w-full overflow-hidden rounded-lg cursor-zoom-in" onClick={() => setIsZoomed(true)}>
+                <Image
+                  src={project.image.imageUrl}
+                  alt={project.title}
+                  width={1200}
+                  height={675}
+                  className="h-full w-auto object-contain"
+                  data-ai-hint={project.image.imageHint}
+                  
+                />
+              </div>
+            <ScrollBar orientation="horizontal" />
+          </ScrollArea>
           <DialogTitle className="font-headline text-3xl font-bold text-foreground">
             {project.title}
           </DialogTitle>
