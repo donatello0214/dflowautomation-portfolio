@@ -3,7 +3,7 @@
     {
       "id": "project1",
       "description": "AI-Powered CRM Automation Project Image",
-      "imageUrl": "https://i.imgur.com/8o9yF9u.png",
+      "imageUrl": "https://i.imgur.com/8oEt9Vp.png",
       "imageHint": "AI CRM"
     },
     {
@@ -21,7 +21,7 @@
     {
       "id": "project4",
       "description": "GCP Data Processing Workflow Project Image",
-      "imageUrl": "https://images.unsplash.com/photo-1759752394755-1241472b589d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjbG91ZCUyMGRhdGF8ZW58MHx8fHwxNzYyMjcwOTA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1759752394755-12411472b589d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjbG91ZCUyMGRhdGF8ZW58MHx8fHwxNzYyMjcwOTA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "cloud data"
     },
     {
