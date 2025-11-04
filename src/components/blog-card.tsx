@@ -12,7 +12,6 @@ import {
 import Image from 'next/image';
 import { Button } from './ui/button';
 import { ArrowUpRight } from 'lucide-react';
-import { Badge } from './ui/badge';
 
 export function BlogCard({ article }: { article: BlogArticle }) {
   return (
@@ -42,7 +41,7 @@ export function BlogCard({ article }: { article: BlogArticle }) {
           </div>
         </div>
       </DialogTrigger>
-      <DialogContent className="max-w-3xl border-accent/20 bg-background/80 shadow-lg shadow-accent/20 backdrop-blur-lg sm:rounded-lg">
+      <DialogContent className="max-w-3xl border-accent/20 bg-background/80 shadow-lg shadow-accent/20 backdrop-blur-lg sm:rounded-lg max-h-[90vh] flex flex-col">
         <DialogHeader>
           <div className="mb-4 aspect-video w-full overflow-hidden rounded-lg">
             <Image
@@ -61,10 +60,12 @@ export function BlogCard({ article }: { article: BlogArticle }) {
             Published on {article.date}
           </DialogDescription>
         </DialogHeader>
-        <div
-          className="prose prose-sm dark:prose-invert max-h-[60vh] overflow-y-auto pr-4 text-foreground/80"
-          dangerouslySetInnerHTML={{ __html: article.content }}
-        />
+        <div className="overflow-y-auto pr-4">
+          <div
+            className="prose prose-sm dark:prose-invert text-foreground/80"
+            dangerouslySetInnerHTML={{ __html: article.content }}
+          />
+        </div>
       </DialogContent>
     </Dialog>
   );

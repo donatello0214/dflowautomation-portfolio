@@ -43,7 +43,7 @@ export function ProjectCard({ project }: { project: Project }) {
           </div>
         </div>
       </DialogTrigger>
-      <DialogContent className="max-w-3xl border-accent/20 bg-background/80 shadow-lg shadow-accent/20 backdrop-blur-lg sm:rounded-lg">
+      <DialogContent className="max-w-3xl border-accent/20 bg-background/80 shadow-lg shadow-accent/20 backdrop-blur-lg sm:rounded-lg max-h-[90vh] flex flex-col">
         <DialogHeader>
           <div className="mb-4 aspect-video w-full overflow-hidden rounded-lg">
             <Image
@@ -62,7 +62,7 @@ export function ProjectCard({ project }: { project: Project }) {
             {project.description}
           </DialogDescription>
         </DialogHeader>
-        <div className="grid gap-4">
+        <div className="grid gap-4 overflow-y-auto pr-4">
           <p className="text-foreground/80">{project.details}</p>
           <div>
             <h4 className="mb-2 font-semibold text-foreground">Tools Used</h4>
