@@ -3,7 +3,7 @@
     {
       "id": "project1",
       "description": "AI-Powered CRM Automation Project Image",
-      "imageUrl": "/images/images/n8-project1.png",
+      "imageUrl": "/images/images/n8n-project1.jpg",
       "imageHint": "AI CRM"
     },
     {
@@ -51,19 +51,19 @@
     {
       "id": "blog1",
       "description": "AI Agents and Workflow Automation Blog Image",
-      "imageUrl": "https://images.unsplash.com/photo-1601132359864-c974e79890ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxBSSUyMHJvYm90fGVufDB8fHx8MTc2MjI0Nzc2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/images/blog1.svg",
       "imageHint": "AI robot"
     },
     {
       "id": "blog2",
       "description": "The Future of CRM Blog Image",
-      "imageUrl": "https://images.unsplash.com/photo-1661029332138-3c653337a979?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmdXR1cmlzdGljJTIwZGFzaGJvYXJkfGVufDB8fHx8MTc2MjE5MDkwMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/images/blog2.png",
       "imageHint": "futuristic dashboard"
     },
     {
       "id": "blog3",
       "description": "Building Autonomous Systems Blog Image",
-      "imageUrl": "https://images.unsplash.com/photo-1656604208230-bf1996ae255f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzeXN0ZW0lMjBhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzYyMjQ3NzY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/images/blog3.webp",
       "imageHint": "system architecture"
     },
     {
@@ -95,24 +95,6 @@
       "description": "n8n Customer Support Ticketing System",
       "imageUrl": "https://images.unsplash.com/photo-1707061803305-58383ee49415?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzdXBwb3J0JTIwdGlja2V0aW5nfGVufDB8fHx8MTc2MjI3NjQ1Mnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "support ticketing"
-    },
-    {
-      "id": "project10",
-      "description": "Make.com Social Media Scheduler",
-      "imageUrl": "https://images.unsplash.com/photo-1761864294727-3c9f6b3e7425?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MXwxfHNlYXJjaHw4fHxzb2NpYWwlMjBtZWRpYXxlbnwwfHx8fDE3NjIyMTcyMjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "social media"
-    },
-    {
-      "id": "project11",
-      "description": "Zapier Real Estate Lead Router",
-      "imageUrl": "https://images.unsplash.com/photo-1605146769289-440113cc3d00?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxyZWFsJTIwZXN0YXRlfGVufDB8fHx8MTc2MjIwMzE5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "real estate"
-    },
-    {
-      "id": "project12",
-      "description": "GoHighLevel Membership Funnel",
-      "imageUrl": "https://images.unsplash.com/photo-1689100241391-2fcc75f3094b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtZW1iZXJzaGlwJTIwZnVubmVsfGVufDB8fHx8MTc2MjI3NjQ1Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "membership funnel"
     }
   ]
 }

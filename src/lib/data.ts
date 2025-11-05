@@ -107,6 +107,15 @@ export const projects: Project[] = [
     tools: ['GoHighLevel', 'Facebook Ads API', 'OpenAI', 'Calendly API'],
     image: PlaceHolderImages.find(p => p.id === 'project8')!,
     link: '#',
+  },
+  {
+    id: '9',
+    title: 'n8n Customer Support Ticketing System',
+    description: 'Automates ticket creation and assignment from emails.',
+    details: 'This workflow monitors a support email inbox. When a new email arrives, it creates a ticket in a helpdesk system (like Zendesk or Freshdesk), extracts customer information, categorizes the request using AI, and assigns it to the appropriate support agent based on predefined rules. It reduces manual triage and response time significantly.',
+    tools: ['n8n', 'Gmail API', 'Zendesk API', 'Google Gemini API'],
+    image: PlaceHolderImages.find(p => p.id === 'project9')!,
+    link: '#',
   }
 ];
 
@@ -201,5 +210,7 @@ export const testimonials: Testimonial[] = [
 
 export const techLogos: TechLogo[] = techStack;
 
+
+    
 
     

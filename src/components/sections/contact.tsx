@@ -107,7 +107,7 @@ export function Contact() {
             <Tooltip>
               <TooltipTrigger asChild>
                 <a href="https://wa.me/639954470799" target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-accent transition-colors">
-                  <Image src="https://cdn.simpleicons.org/whatsapp/ffffff" alt="WhatsApp" width={32} height={32} className="h-8 w-8" />
+                  <Image src="/images/images/whatsapp.png" alt="WhatsApp" width={32} height={32} className="h-8 w-8" />
                   <span className="sr-only">WhatsApp</span>
                 </a>
               </TooltipTrigger>
