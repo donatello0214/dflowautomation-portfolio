@@ -1,18 +1,18 @@
 {
   "techStack": [
-    { "id": "OpenAI", "name": "OpenAI", "imageUrl": "https://cdn.simpleicons.org/openai/black" },
+    { "id": "OpenAI", "name": "OpenAI", "imageUrl": "/images/images/OpenAI-logo.svg" },
     { "id": "GoogleGemini", "name": "Google Gemini", "imageUrl": "/images/images/gemini-logo.svg" },
-    { "id": "Firebase", "name": "Firebase", "imageUrl": "https://cdn.simpleicons.org/firebase/black" },
+    { "id": "Firebase", "name": "Firebase", "imageUrl": "/images/images/Firebase-logo.png" },
     { "id": "Make", "name": "Make", "imageUrl": "/images/images/make-logo.svg" },
-    { "id": "n8n", "name": "n8n", "imageUrl": "https://cdn.simpleicons.org/n8n/black" },
-    { "id": "Zapier", "name": "Zapier", "imageUrl": "https://cdn.simpleicons.org/zapier/black" },
-    { "id": "GoHighLevel", "name": "GoHighLevel", "imageUrl": "https://assets-global.website-files.com/6433e03554a133455b546369/6433e03554a13328245463f2_GHL-Logo.svg" },
-    { "id": "Notion", "name": "Notion", "imageUrl": "https://cdn.simpleicons.org/notion/black" },
+    { "id": "n8n", "name": "n8n", "imageUrl": "/images/images/n8n-logo.png" },
+    { "id": "Zapier", "name": "Zapier", "imageUrl": "/images/images/Zapier-logo.svg" },
+    { "id": "GoHighLevel", "name": "GoHighLevel", "imageUrl": "/images/images/gohighlevel-logo.svg" },
+    { "id": "Notion", "name": "Notion", "imageUrl": "/images/images/Notion-logo.png" },
     { "id": "Airtable", "name": "Airtable", "imageUrl": "/images/images/airtable-logo.svg" },
     { "id": "Slack", "name": "Slack", "imageUrl": "/images/images/slack-logo.svg" },
-    { "id": "Pipedrive", "name": "Pipedrive", "imageUrl": "https://cdn.simpleicons.org/pipedrive/black" },
+    { "id": "Pipedrive", "name": "Pipedrive", "imageUrl": "/images/images/Pipedrive-logo.svg" },
     { "id": "Asana", "name": "Asana", "imageUrl": "/images/images/asana-logo.svg" },
     { "id": "Xero", "name": "Xero", "imageUrl": "/images/images/xero-logo.svg" },
-    { "id": "GoogleCloud", "name": "Google Cloud", "imageUrl": "https://cdn.simpleicons.org/googlecloud/black" }
+    { "id": "GoogleCloud", "name": "Google Cloud", "imageUrl": "/images/images/googlecloud-icon.png" }
   ]
 }

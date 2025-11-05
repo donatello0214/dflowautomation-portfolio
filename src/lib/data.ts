@@ -188,7 +188,7 @@ export const testimonials: Testimonial[] = [
   {
     name: 'Olivette Valdez',
     title: 'Entrepreur, Acquapurro WRS',
-    quote: 'DFlowAutomation revolutionized our lead management process. The AI-powered CRM automation is incredibly efficient, saving our sales team hours of manual work every day. Our conversion rates have improved by 40%!',
+    quote: 'The AI Chatbot that I commisioned DFlowAutomation to create for my Facebook Page is a life-saver! It handles customer messages automatically, saves so much time, and boosted my sales by around 40%. The setup was seamless, professional, and truly transformed my daily operations with less effort.',
     image: PlaceHolderImages.find(p => p.id === 'testimonial1')!,
   },
   {

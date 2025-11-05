@@ -34,6 +34,14 @@ import {
   TooltipTrigger,
 } from '@/components/ui/tooltip';
 import Image from 'next/image';
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from '@/components/ui/dialog';
 
 const contactFormSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters.'),
@@ -47,7 +55,15 @@ export function Contact() {
   const { toast } = useToast();
   const [showConfirmation, setShowConfirmation] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  
+  const [isMailerOpen, setIsMailerOpen] = useState(false);
+
+  const mailerOptions = [
+    { name: 'Default Mail App', href: 'mailto:dflowautomation@gmail.com' },
+    { name: 'Gmail', href: 'https://mail.google.com/mail/?view=cm&fs=1&to=dflowautomation@gmail.com' },
+    { name: 'Outlook', href: 'https://outlook.live.com/owa/?path=/mail/action/compose&to=dflowautomation@gmail.com' },
+    { name: 'Yahoo Mail', href: 'https://mail.yahoo.com/?to=dflowautomation@gmail.com' },
+  ];
+
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
@@ -91,7 +107,7 @@ export function Contact() {
             <Tooltip>
               <TooltipTrigger asChild>
                 <a href="https://wa.me/639954470799" target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-accent transition-colors">
-                  <Image src="https://cdn.simpleicons.org/whatsapp/A9A9A9" alt="WhatsApp" width={32} height={32} className="h-8 w-8" />
+                  <Image src="https://cdn.simpleicons.org/whatsapp/ffffff" alt="WhatsApp" width={32} height={32} className="h-8 w-8" />
                   <span className="sr-only">WhatsApp</span>
                 </a>
               </TooltipTrigger>
@@ -121,17 +137,38 @@ export function Contact() {
                 <p>github.com/dflowautomation</p>
               </TooltipContent>
             </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <a href="mailto:dflowautomation@gmail.com" className="text-foreground/60 hover:text-accent transition-colors">
-                  <Mail className="h-8 w-8" />
-                  <span className="sr-only">Email</span>
-                </a>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>dflowautomation@gmail.com</p>
-              </TooltipContent>
-            </Tooltip>
+            <Dialog open={isMailerOpen} onOpenChange={setIsMailerOpen}>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <DialogTrigger asChild>
+                    <button className="text-foreground/60 hover:text-accent transition-colors">
+                      <Mail className="h-8 w-8" />
+                      <span className="sr-only">Email</span>
+                    </button>
+                  </DialogTrigger>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>dflowautomation@gmail.com</p>
+                </TooltipContent>
+              </Tooltip>
+              <DialogContent className="sm:max-w-md">
+                <DialogHeader>
+                  <DialogTitle>Choose Your Mailer</DialogTitle>
+                  <DialogDescription>
+                    Select an application to compose your email to dflowautomation@gmail.com.
+                  </DialogDescription>
+                </DialogHeader>
+                <div className="flex flex-col space-y-2">
+                  {mailerOptions.map((option) => (
+                     <Button asChild key={option.name} variant="outline" className="justify-start">
+                        <a href={option.href} target="_blank" rel="noopener noreferrer" onClick={() => setIsMailerOpen(false)}>
+                            {option.name}
+                        </a>
+                     </Button>
+                  ))}
+                </div>
+              </DialogContent>
+            </Dialog>
         </div>
         <div className="relative rounded-lg border border-accent/20 bg-card p-8 shadow-lg shadow-accent/20">
           <Form {...form}>
