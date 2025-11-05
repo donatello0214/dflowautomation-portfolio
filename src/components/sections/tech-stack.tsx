@@ -1,21 +1,7 @@
 'use client';
-import { Icons } from '../icons';
 import { useEffect, useRef } from 'react';
 import { techLogos } from '@/lib/data';
-import type { TechLogo } from '@/lib/data';
-
-const iconMap: Record<string, React.FC<React.SVGProps<SVGSVGElement>>> = {
-  OpenAI: Icons.OpenAI,
-  Firebase: Icons.Firebase,
-  Make: Icons.Make,
-  n8n: Icons.n8n,
-  Zapier: Icons.Zapier,
-  Notion: Icons.Notion,
-  Airtable: Icons.Airtable,
-  Slack: Icons.Slack,
-  Pipedrive: Icons.Pipedrive,
-  GoogleCloud: Icons.GoogleCloud,
-};
+import Image from 'next/image';
 
 export function TechStack() {
     const scrollerRef = useRef<HTMLDivElement>(null);
@@ -44,13 +30,19 @@ export function TechStack() {
           Core Technologies
         </h2>
         <div className="tech-scroller" ref={scrollerRef}>
-          <div className="tech-scroller-inner flex gap-12">
+          <div className="tech-scroller-inner flex items-center gap-12">
             {techLogos.map((tech) => {
-              const Icon = iconMap[tech.id];
-              if (!Icon) return null;
+              if (!tech.imageUrl) return null;
               return (
                 <div key={tech.id} className="flex flex-col items-center gap-2 text-foreground/60 transition-colors hover:text-accent">
-                  <Icon className="h-12 w-12" />
+                  <div className="relative h-12 w-12">
+                    <Image 
+                      src={tech.imageUrl} 
+                      alt={`${tech.name} logo`}
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
                   <span className="text-sm font-medium">{tech.name}</span>
                 </div>
               );

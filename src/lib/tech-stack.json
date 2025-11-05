@@ -1,14 +1,14 @@
 {
   "techStack": [
-    { "id": "OpenAI", "name": "OpenAI" },
-    { "id": "Firebase", "name": "Firebase" },
-    { "id": "Make", "name": "Make.com" },
-    { "id": "n8n", "name": "n8n" },
-    { "id": "Zapier", "name": "Zapier" },
-    { "id": "Notion", "name": "Notion" },
-    { "id": "Airtable", "name": "Airtable" },
-    { "id": "Slack", "name": "Slack" },
-    { "id": "Pipedrive", "name": "Pipedrive" },
-    { "id": "GoogleCloud", "name": "Google Cloud" }
+    { "id": "OpenAI", "name": "OpenAI", "imageUrl": "https://cdn.simpleicons.org/openai/black" },
+    { "id": "Firebase", "name": "Firebase", "imageUrl": "https://cdn.simpleicons.org/firebase/black" },
+    { "id": "Make", "name": "Make", "imageUrl": "https://cdn.simpleicons.org/make/black" },
+    { "id": "n8n", "name": "n8n", "imageUrl": "https://cdn.simpleicons.org/n8n/black" },
+    { "id": "Zapier", "name": "Zapier", "imageUrl": "https://cdn.simpleicons.org/zapier/black" },
+    { "id": "Notion", "name": "Notion", "imageUrl": "https://cdn.simpleicons.org/notion/black" },
+    { "id": "Airtable", "name": "Airtable", "imageUrl": "https://cdn.simpleicons.org/airtable/black" },
+    { "id": "Slack", "name": "Slack", "imageUrl": "https://cdn.simpleicons.org/slack/black" },
+    { "id": "Pipedrive", "name": "Pipedrive", "imageUrl": "https://cdn.simpleicons.org/pipedrive/black" },
+    { "id": "GoogleCloud", "name": "Google Cloud", "imageUrl": "https://cdn.simpleicons.org/googlecloud/black" }
   ]
 }

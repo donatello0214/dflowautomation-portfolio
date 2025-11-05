@@ -31,16 +31,17 @@ export type Testimonial = {
 export type TechLogo = {
   id: string;
   name: string;
+  imageUrl?: string;
 };
 
 
 export const projects: Project[] = [
   {
     id: '1',
-    title: 'AI-Powered CRM Automation',
-    description: 'Automated lead scoring and contact segmentation for Pipedrive.',
-    details: 'This project involved developing a sophisticated AI agent that integrates deeply with the Pipedrive CRM API. The system was architected to handle a high volume of incoming leads from various marketing channels. Using a custom-trained model on OpenAI, the agent performs real-time lead analysis, scoring each lead based on over 50 data points, including engagement history, firmographic data, and behavioral patterns. A key feature is the dynamic segmentation engine, which automatically assigns contacts to specific, targeted marketing campaigns within Pipedrive, significantly improving personalization. The implementation of this system led to a verifiable 40% increase in lead conversion rates and reduced manual lead processing time by over 95%.',
-    tools: ['OpenAI', 'Pipedrive API', 'n8n', 'Firebase'],
+    title: 'FB Page AI Chatbot',
+    description: 'AI-powered Messenger chatbot automating responses, tasks, and customer engagement.',
+    details: 'This n8n-powered Facebook Page AI Chatbot revolutionizes client operations by automating customer communication, inquiries, and sales conversations. It provides instant, intelligent responses 24/7—handling FAQs, bookings, and product recommendations without human intervention. By streamlining daily workflows and minimizing manual effort, it allows businesses to operate efficiently with fewer staff. Clients experience faster response times, improved engagement, and stronger lead nurturing, resulting in up to a 60% increase in sales. The chatbot not only saves labor costs but also delivers consistent, personalized experiences that strengthen customer trust and loyalty.',
+    tools: ['n8n', 'Google Gemini API', 'FB Messenger API', 'Google Sheets'],
     image: PlaceHolderImages.find(p => p.id === 'project1')!,
     link: '#',
   },
@@ -185,22 +186,16 @@ export const blogArticles: BlogArticle[] = [
 
 export const testimonials: Testimonial[] = [
   {
-    name: 'Sarah Johnson',
-    title: 'CEO, Innovate Inc.',
+    name: 'Olivette Valdez',
+    title: 'Entrepreur, Acquapurro WRS',
     quote: 'DFlowAutomation revolutionized our lead management process. The AI-powered CRM automation is incredibly efficient, saving our sales team hours of manual work every day. Our conversion rates have improved by 40%!',
     image: PlaceHolderImages.find(p => p.id === 'testimonial1')!,
   },
   {
-    name: 'Michael Chen',
-    title: 'Head of Operations, TechFront',
-    quote: 'The autonomous Slack responder has been a game-changer for our customer support. It handles over 60% of incoming queries, allowing our team to focus on high-priority issues. The integration with our knowledge base is seamless.',
+    name: 'Ezekiel V.',
+    title: 'Content Creator, AskMeAnything',
+    quote: 'DFlowAutomation built an incredible ChatGPT-style automation for my Messenger page! It’s fast, intelligent, and engages my audience like never before. The setup was smooth, fully customized to my content, and has boosted my interaction and productivity tremendously. Highly recommended!',
     image: PlaceHolderImages.find(p => p.id === 'testimonial2')!,
-  },
-  {
-    name: 'Jessica Rodriguez',
-    title: 'Marketing Director, Creative Solutions',
-    quote: 'The automated content pipeline is a masterpiece of efficiency. What used to be a two-week process now takes two days. The quality of the AI-generated content is consistently high, and the system just works.',
-    image: PlaceHolderImages.find(p => p.id === 'testimonial3')!,
   }
 ];
 
