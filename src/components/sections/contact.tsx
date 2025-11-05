@@ -33,23 +33,7 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from '@/components/ui/tooltip';
-
-const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      stroke="currentColor"
-      strokeWidth="0"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      {...props}
-    >
-      <path d="M16.75 13.96c.25.13.41.2.46.3.05.1.03.48-.18.93-.21.45-1.05.9-1.4.93-.35.03-.53.03-.75-.02-.22-.05-1.36-.5-2.58-1.5-1.22-1-2.04-2.23-2.28-2.6-.24-.37-.38-.64-.38-.83s-.03-.28.08-.38c.11-.1.28-.26.43-.4.15-.14.28-.25.38-.4.1-.15.08-.28-.03-.43-.11-.15-1.2-.28-1.64-1.32-.44-1.04-.9-1.02-.9-1.02s-.53.02-.78.26c-.25.24-.78.73-.78 1.78s.78 2.05.9 2.2c.12.15 1.4,2.1,3.48,2.95.46.18.82.28,1.1.36.28.08.55.05.78-.03.22-.08.68-.3,1-1.04.32-.74.32-1.36.22-1.5-.1-.14-.25-.22-.5-.35z M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18s-4.37-1.93-6-3.33c0 0 1.53.53 3-1.02.7-.75 1.03-1.75.4-2.68-.63-.93-1.95-1.05-1.95-1.05s.4-.22.9-.53c.5-.3.88-.8.95-1.42.07-.6-.18-1.2-.5-1.64-.32-.44-.8-.68-1.2-.7-.4-.03-1.05.1-1.58.4C6.07 8.04 5.5 9.5 5.5 9.5s-1.8-3.48 2.6-5.8c4.4-2.3 9.4.5 9.4 5.3 0 4.8-3.9 8-7.5 8z" />
-    </svg>
-  );
+import Image from 'next/image';
 
 const contactFormSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters.'),
@@ -107,7 +91,7 @@ export function Contact() {
             <Tooltip>
               <TooltipTrigger asChild>
                 <a href="https://wa.me/639954470799" target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-accent transition-colors">
-                  <WhatsAppIcon className="h-8 w-8" />
+                  <Image src="https://cdn.simpleicons.org/whatsapp/A9A9A9" alt="WhatsApp" width={32} height={32} className="h-8 w-8" />
                   <span className="sr-only">WhatsApp</span>
                 </a>
               </TooltipTrigger>
@@ -245,5 +229,3 @@ export function Contact() {
     </section>
   );
 }
-
-    

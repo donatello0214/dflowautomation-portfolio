@@ -1,18 +1,18 @@
 {
   "techStack": [
     { "id": "OpenAI", "name": "OpenAI", "imageUrl": "https://cdn.simpleicons.org/openai/black" },
-    { "id": "GoogleGemini", "name": "Google Gemini", "imageUrl": "https://cdn.simpleicons.org/google-gemini/black" },
+    { "id": "GoogleGemini", "name": "Google Gemini", "imageUrl": "/images/images/gemini-logo.svg" },
     { "id": "Firebase", "name": "Firebase", "imageUrl": "https://cdn.simpleicons.org/firebase/black" },
-    { "id": "Make", "name": "Make", "imageUrl": "https://cdn.simpleicons.org/make/black" },
+    { "id": "Make", "name": "Make", "imageUrl": "/images/images/make-logo.svg" },
     { "id": "n8n", "name": "n8n", "imageUrl": "https://cdn.simpleicons.org/n8n/black" },
     { "id": "Zapier", "name": "Zapier", "imageUrl": "https://cdn.simpleicons.org/zapier/black" },
     { "id": "GoHighLevel", "name": "GoHighLevel", "imageUrl": "https://assets-global.website-files.com/6433e03554a133455b546369/6433e03554a13328245463f2_GHL-Logo.svg" },
     { "id": "Notion", "name": "Notion", "imageUrl": "https://cdn.simpleicons.org/notion/black" },
-    { "id": "Airtable", "name": "Airtable", "imageUrl": "https://cdn.simpleicons.org/airtable/black" },
-    { "id": "Slack", "name": "Slack", "imageUrl": "https://cdn.simpleicons.org/slack/black" },
+    { "id": "Airtable", "name": "Airtable", "imageUrl": "/images/images/airtable-logo.svg" },
+    { "id": "Slack", "name": "Slack", "imageUrl": "/images/images/slack-logo.svg" },
     { "id": "Pipedrive", "name": "Pipedrive", "imageUrl": "https://cdn.simpleicons.org/pipedrive/black" },
-    { "id": "Asana", "name": "Asana", "imageUrl": "https://cdn.simpleicons.org/asana/black" },
-    { "id": "Xero", "name": "Xero", "imageUrl": "https://cdn.simpleicons.org/xero/black" },
+    { "id": "Asana", "name": "Asana", "imageUrl": "/images/images/asana-logo.svg" },
+    { "id": "Xero", "name": "Xero", "imageUrl": "/images/images/xero-logo.svg" },
     { "id": "GoogleCloud", "name": "Google Cloud", "imageUrl": "https://cdn.simpleicons.org/googlecloud/black" }
   ]
 }
