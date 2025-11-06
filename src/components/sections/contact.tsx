@@ -107,7 +107,7 @@ export function Contact() {
             <Tooltip>
               <TooltipTrigger asChild>
                 <a href="https://wa.me/639954470799" target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-accent transition-colors">
-                  <Image src="/images/images/whatsapp.png" alt="WhatsApp" width={32} height={32} className="h-8 w-8" />
+                  <Image src="https://cdn.simpleicons.org/whatsapp/white" alt="WhatsApp" width={32} height={32} className="h-8 w-8" />
                   <span className="sr-only">WhatsApp</span>
                 </a>
               </TooltipTrigger>
@@ -223,7 +223,7 @@ export function Contact() {
                   type="submit"
                   disabled={isSubmitting}
                   className={cn(
-                    "relative overflow-hidden bg-primary text-primary-foreground transition-all duration-300 hover:bg-primary/90 hover:shadow-lg hover:shadow-cyan-500/50",
+                    "relative overflow-hidden bg-primary text-black transition-all duration-300 hover:bg-primary/90 hover:shadow-lg hover:shadow-cyan-500/50",
                     "active:scale-95",
                     "dark:bg-cyan-400 dark:text-cyan-950 dark:hover:bg-cyan-300",
                   )}
