@@ -8,10 +8,11 @@ import {
   DialogTitle,
   DialogTrigger,
   DialogDescription,
+  DialogClose,
 } from '@/components/ui/dialog';
 import Image from 'next/image';
 import { Button } from './ui/button';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, MessageCircle } from 'lucide-react';
 
 export function BlogCard({ article }: { article: BlogArticle }) {
   return (
@@ -60,12 +61,21 @@ export function BlogCard({ article }: { article: BlogArticle }) {
             Published on {article.date}
           </DialogDescription>
         </DialogHeader>
-        <div className="overflow-y-auto pr-4">
+        <div className="overflow-y-auto pr-4 flex-1">
           <div
             className="prose prose-sm dark:prose-invert text-foreground/80"
             dangerouslySetInnerHTML={{ __html: article.content }}
           />
         </div>
+         <div className="mt-4 flex justify-end">
+            <DialogClose asChild>
+              <Button asChild className="text-blue-500">
+                <a href="/#contact">
+                  Get in Touch <MessageCircle className="ml-2 h-4 w-4" />
+                </a>
+              </Button>
+            </DialogClose>
+          </div>
       </DialogContent>
     </Dialog>
   );
