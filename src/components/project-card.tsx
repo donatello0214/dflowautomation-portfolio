@@ -36,7 +36,7 @@ export function ProjectCard({ project }: { project: Project }) {
             />
           </div>
           <div className="relative z-20 flex h-full flex-col justify-end p-6">
-            <h3 className="mb-2 font-headline text-2xl font-bold text-white">
+            <h3 className="mb-2 font-headline text-2xl font-bold text-blue-500">
               {project.title}
             </h3>
             <p className="text-sm text-white/80">{project.description}</p>
@@ -64,7 +64,7 @@ export function ProjectCard({ project }: { project: Project }) {
               </div>
             <ScrollBar orientation="horizontal" />
           </ScrollArea>
-          <DialogTitle className="font-headline text-3xl font-bold text-foreground">
+          <DialogTitle className="font-headline text-3xl font-bold text-blue-500">
             {project.title}
           </DialogTitle>
           <DialogDescription className="text-muted-foreground">
