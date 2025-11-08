@@ -18,22 +18,24 @@ export function BlogCard({ article }: { article: BlogArticle }) {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <div className="group relative cursor-pointer overflow-hidden rounded-lg bg-card shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-accent/30 hover:shadow-xl">
-          <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/80 via-black/0 to-black/0 transition-all group-hover:from-black/90" />
-          <div className="absolute inset-0 z-0 scale-100 transition-transform duration-500 group-hover:scale-105 blur-md group-hover:blur-none">
-            <Image
-              src={article.image.imageUrl}
-              alt={article.title}
-              fill
-              className="object-cover"
-              data-ai-hint={article.image.imageHint}
-            />
-          </div>
-          <div className="relative z-20 flex h-full flex-col justify-end p-6">
-            <h3 className="mb-2 font-headline text-2xl font-bold text-blue-500">
-              {article.title}
-            </h3>
-            <p className="text-sm text-white/80">{article.excerpt}</p>
+        <div className="group relative flex h-full cursor-pointer flex-col overflow-hidden rounded-lg bg-gray-800 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-accent/30 hover:shadow-xl">
+           <div className="relative z-20 flex h-full flex-col justify-between p-6">
+            <div>
+              <div className="mb-4 aspect-video w-full overflow-hidden rounded-md">
+                 <Image
+                  src={article.image.imageUrl}
+                  alt={article.title}
+                  width={600}
+                  height={400}
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  data-ai-hint={article.image.imageHint}
+                />
+              </div>
+              <h3 className="mb-2 font-headline text-2xl font-bold text-blue-500">
+                {article.title}
+              </h3>
+              <p className="text-sm text-white/80">{article.excerpt}</p>
+            </div>
           </div>
           <div className="absolute top-4 right-4 z-20 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
             <Button size="icon" variant="secondary" className="rounded-full">
