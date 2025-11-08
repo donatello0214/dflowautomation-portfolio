@@ -20,7 +20,7 @@ export function BlogCard({ article }: { article: BlogArticle }) {
       <DialogTrigger asChild>
         <div className="group relative cursor-pointer overflow-hidden rounded-lg bg-card shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-accent/30 hover:shadow-xl">
           <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/80 via-black/0 to-black/0 transition-all group-hover:from-black/90" />
-          <div className="absolute inset-0 z-0 scale-100 transition-transform duration-500 group-hover:scale-105 blur-sm group-hover:blur-none">
+          <div className="absolute inset-0 z-0 scale-100 transition-transform duration-500 group-hover:scale-105 blur-md group-hover:blur-none">
             <Image
               src={article.image.imageUrl}
               alt={article.title}
