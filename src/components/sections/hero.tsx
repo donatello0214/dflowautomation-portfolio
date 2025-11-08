@@ -7,7 +7,7 @@ export function Hero() {
       className="relative flex h-[calc(100vh-4rem)] min-h-[500px] w-full items-center justify-center text-center"
     >
       <div className="container relative z-10 flex flex-col items-center">
-        <h1 className="font-headline text-5xl font-black tracking-tighter text-primary-foreground drop-shadow-lg dark:text-white dark:drop-shadow-[0_2px_10px_rgba(119,188,255,0.5)] sm:text-7xl md:text-8xl">
+        <h1 className="font-headline text-5xl font-black tracking-tighter text-white drop-shadow-lg dark:text-white dark:drop-shadow-[0_2px_10px_rgba(119,188,255,0.5)] sm:text-7xl md:text-8xl">
           Automate. Integrate. Elevate.
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-primary-foreground/80 sm:text-xl dark:text-slate-300 dark:drop-shadow-[0_2px_5px_rgba(119,188,255,0.3)]">
