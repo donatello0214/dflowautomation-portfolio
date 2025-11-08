@@ -29,8 +29,8 @@ export function BlogCard({ article }: { article: BlogArticle }) {
               data-ai-hint={article.image.imageHint}
             />
           </div>
-          <div className="relative z-20 flex h-full flex-col justify-end p-6 text-white">
-            <h3 className="mb-2 font-headline text-2xl font-bold text-white">
+          <div className="relative z-20 flex h-full flex-col justify-end p-6">
+            <h3 className="mb-2 font-headline text-2xl font-bold text-blue-500">
               {article.title}
             </h3>
             <p className="text-sm text-white/80">{article.excerpt}</p>
@@ -54,7 +54,7 @@ export function BlogCard({ article }: { article: BlogArticle }) {
               data-ai-hint={article.image.imageHint}
             />
           </div>
-          <DialogTitle className="font-headline text-3xl font-bold text-foreground">
+          <DialogTitle className="font-headline text-3xl font-bold text-blue-500">
             {article.title}
           </DialogTitle>
           <DialogDescription className="text-muted-foreground">
