@@ -11,7 +11,6 @@ type GroupedProjects = {
   make: Project[];
   zapier: Project[];
   gohighlevel: Project[];
-  other: Project[];
 };
 
 export default function ProjectsPage() {
@@ -21,7 +20,6 @@ export default function ProjectsPage() {
       make: [],
       zapier: [],
       gohighlevel: [],
-      other: [],
     };
 
     projects.forEach(project => {
@@ -33,8 +31,6 @@ export default function ProjectsPage() {
         groups.zapier.push(project);
       } else if (project.tools.some(tool => tool.toLowerCase().includes('gohighlevel'))) {
         groups.gohighlevel.push(project);
-      } else {
-        groups.other.push(project);
       }
     });
 
@@ -79,10 +75,6 @@ export default function ProjectsPage() {
         {renderProjectGroup('Zapier', groupedProjects.zapier)}
         {renderProjectGroup('GoHighLevel', groupedProjects.gohighlevel)}
         
-        {groupedProjects.other.length > 0 && 
-          renderProjectGroup('Other', groupedProjects.other)
-        }
-
       </FadeIn>
     </div>
   );
