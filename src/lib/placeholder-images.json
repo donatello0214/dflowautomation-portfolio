@@ -8,9 +8,9 @@
     },
     {
       "id": "project2",
-      "description": "Autonomous Slack Responder Project Image",
-      "imageUrl": "/images/images/n8n-project2.png",
-      "imageHint": "AI chatbot"
+      "description": "Auto Sort Gmail Attachments on Drive",
+      "imageUrl": "/images/images/make-project1.png",
+      "imageHint": "Make.com"
     },
     {
       "id": "project3",
@@ -32,8 +32,8 @@
     },
     {
       "id": "project6",
-      "description": "Make.com E-commerce Sync",
-      "imageUrl": "https://picsum.photos/seed/project6/600/400",
+      "description": "Asana Snyc with Xero Automation",
+      "imageUrl": "/images/images/make-project2.png",
       "imageHint": "ecommerce sync"
     },
     {
@@ -95,6 +95,12 @@
       "description": "n8n Customer Support Ticketing System",
       "imageUrl": "https://images.unsplash.com/photo-1707061803305-58383ee49415?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzdXBwb3J0JTIwdGlja2V0aW5nfGVufDB8fHx8MTc2MjI3NjQ1Mnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "support ticketing"
+    },
+    {
+      "id": "project10",
+      "description": "E-commerce Order & Inventory Sync",
+      "imageUrl": "https://images.unsplash.com/photo-1579548122204-c481a547c1f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxlY29tbWVyY2UlMjBzeW5jfGVufDB8fHx8MTc2MjI3NzAwNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ecommerce sync"
     }
   ]
 }

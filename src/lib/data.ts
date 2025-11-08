@@ -47,10 +47,10 @@ export const projects: Project[] = [
   },
   {
     id: '2',
-    title: 'Autonomous Slack Responder',
-    description: 'A smart AI agent for handling customer queries in Slack channels.',
-    details: 'For this project, I built a fully autonomous AI agent designed to function as a first-line support specialist within a busy Slack workspace. The agent uses advanced Natural Language Processing (NLP) to understand the intent and sentiment of customer queries in real-time. It seamlessly integrates with a Notion knowledge base, structured as a vector database, to fetch and deliver accurate, context-aware responses instantly. A critical feature is its intelligent escalation protocol; when the agent determines a query is too complex or emotionally charged, it automatically summarizes the conversation, gathers relevant user data, and triages it to the appropriate human support tier, ensuring a smooth handoff and efficient resolution.',
-    tools: ['Slack API', 'Notion API', 'OpenAI', 'Make.com'],
+    title: 'Auto Sort Gmail Attachments on Drive',
+    description: 'Auto Sort Gmail Attachments on Drive automates fetching unread email attachments, renames files with AI, uploads to Google Drive, logs info in Sheets, and sends summary notifications.',
+    details: 'This workflow efficiently automates retrieving unread email attachments, intelligently generating concise, date-based filenames using AI. It securely uploads these files to designated Google Drive folders, logs all file details in Google Sheets for tracking, and sends notification emails to keep clients informed. This streamlined process reduces manual effort, minimizes errors, enhances organization, and ensures quick access to important documents, thereby significantly improving operational efficiency and document management for the client.',
+    tools: ['Google Drive', 'Google Sheets', 'Google Docs', 'Gemini', 'Make.com'],
     image: PlaceHolderImages.find(p => p.id === 'project2')!,
     link: '#',
   },
@@ -83,10 +83,10 @@ export const projects: Project[] = [
   },
   {
     id: '6',
-    title: 'Make.com E-commerce Sync',
-    description: 'Real-time inventory and order synchronization for Shopify and ERP.',
-    details: 'This Make.com scenario provides a robust, two-way synchronization between a Shopify store and a client\'s custom ERP system. The workflow captures new orders in real-time, updates inventory levels across both platforms to prevent overselling, and syncs customer data. It includes complex error handling to manage API rate limits and connection issues, ensuring data integrity.',
-    tools: ['Make.com', 'Shopify API', 'Custom ERP API', 'MySQL'],
+    title: 'Asana Snyc with Xero Automation',
+    description: 'The automation workflow syncs Asana completed tasks with Xero and Google Sheets, updates records, and uploads data attachments automatically.',
+    details: 'This Make.com scenario seamlessly integrated Asana, Xero, and Google Sheets to streamline the client’s business operations. It automatically tracked completed Asana tasks, synchronized relevant financial transactions with Xero, and populated Google Sheets with updated data records for reporting and reconciliation. Automated attachment uploads and regular sheet clearance ensured up-to-date information and reduced manual intervention. This workflow saved significant time, improved accuracy, and enabled real-time decision-making for the client. As a result, the client benefited from increased operational efficiency, enhanced data reliability, and a smarter, more connected approach to managing projects and finances.',
+    tools: ['Make.com', 'Asana API', 'Xero API', 'Google Sheets'],
     image: PlaceHolderImages.find(p => p.id === 'project6')!,
     link: '#',
   },
@@ -115,6 +115,15 @@ export const projects: Project[] = [
     details: 'This workflow monitors a support email inbox. When a new email arrives, it creates a ticket in a helpdesk system (like Zendesk or Freshdesk), extracts customer information, categorizes the request using AI, and assigns it to the appropriate support agent based on predefined rules. It reduces manual triage and response time significantly.',
     tools: ['n8n', 'Gmail API', 'Zendesk API', 'Google Gemini API'],
     image: PlaceHolderImages.find(p => p.id === 'project9')!,
+    link: '#',
+  },
+  {
+    id: '10',
+    title: 'E-commerce Order & Inventory Sync',
+    description: 'Automated syncing of orders and inventory between Shopify and an external fulfillment service.',
+    details: 'This Make.com scenario monitors new Shopify orders in real-time. When an order is placed, it\'s instantly sent to a third-party logistics (3PL) provider\'s API for fulfillment. The workflow then updates the inventory levels in Shopify to reflect the sale, preventing overselling. It also syncs shipping confirmations from the 3PL back to Shopify, automatically notifying the customer. This automation eliminated manual order entry and reduced inventory discrepancies by 99%.',
+    tools: ['Make.com', 'Shopify API', 'Google Sheets', 'REST API'],
+    image: PlaceHolderImages.find(p => p.id === 'project10')!,
     link: '#',
   }
 ];
@@ -210,6 +219,8 @@ export const testimonials: Testimonial[] = [
 
 export const techLogos: TechLogo[] = techStack;
 
+
+    
 
     
 
