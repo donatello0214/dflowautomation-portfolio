@@ -69,12 +69,26 @@ export function ProjectCard({ project }: { project: Project }) {
           <DialogTitle className="font-headline text-3xl font-bold text-blue-500">
             {project.title}
           </DialogTitle>
-          <DialogDescription className="text-muted-foreground">
-            {project.description}
-          </DialogDescription>
         </DialogHeader>
-        <div className="grid gap-4 overflow-y-auto pr-4">
-          <p className="text-foreground/80">{project.details}</p>
+        <div className="grid gap-6 overflow-y-auto pr-4 flex-1">
+          <div>
+            <h4 className="mb-2 font-semibold text-foreground">Overview</h4>
+            <p className="text-foreground/80">{project.overview}</p>
+          </div>
+          <div>
+            <h4 className="mb-2 font-semibold text-foreground">Problem</h4>
+            <p className="text-foreground/80">{project.problem}</p>
+          </div>
+          <div>
+            <h4 className="mb-2 font-semibold text-foreground">Solution</h4>
+            <p className="text-foreground/80">{project.solution}</p>
+          </div>
+          <div>
+            <h4 className="mb-2 font-semibold text-foreground">Impact</h4>
+            <p className="text-foreground/80">{project.impact}</p>
+
+          </div>
+
           <div>
             <h4 className="mb-2 font-semibold text-foreground">Tools Used</h4>
             <div className="flex flex-wrap gap-2">
@@ -85,14 +99,16 @@ export function ProjectCard({ project }: { project: Project }) {
               ))}
             </div>
           </div>
-          <DialogClose asChild>
-            <Button asChild className="text-blue-500">
-              <a href="/#contact">
-                Get in Touch <MessageCircle className="ml-2 h-4 w-4" />
-              </a>
-            </Button>
-          </DialogClose>
         </div>
+         <div className="mt-4 flex justify-end">
+            <DialogClose asChild>
+              <Button asChild className="text-blue-500">
+                <a href="/#contact">
+                  Get in Touch <MessageCircle className="ml-2 h-4 w-4" />
+                </a>
+              </Button>
+            </DialogClose>
+          </div>
         
         {isZoomed && (
           <div 

@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "project1",
-      "description": "AI-Powered CRM Automation Project Image",
-      "imageUrl": "/images/images/n8n-project1.jpg",
-      "imageHint": "AI CRM"
+      "description": "FB Page AI Chatbot",
+      "imageUrl": "/images/images/n8-project1.png",
+      "imageHint": "AI Chatbot"
     },
     {
       "id": "project2",
@@ -92,8 +92,8 @@
     },
     {
       "id": "project9",
-      "description": "n8n Customer Support Ticketing System",
-      "imageUrl": "https://images.unsplash.com/photo-1707061803305-58383ee49415?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzdXBwb3J0JTIwdGlja2V0aW5nfGVufDB8fHx8MTc2MjI3NjQ1Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Zendesk Customer Support Ticketing System",
+      "imageUrl": "/images/images/n8n-project 3.png",
       "imageHint": "support ticketing"
     },
     {
