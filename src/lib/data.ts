@@ -11,7 +11,7 @@ export type Project = {
   solution: string;
   impact: string;
   tools: string[];
-  image: (typeof PlaceHolderImages)[0];
+  image: (typeof PlaceHolderImages)[0] | (typeof PlaceHolderImages);
   link: string;
 };
 
@@ -120,7 +120,11 @@ export const projects: Project[] = [
     solution: 'A Zapier "Zap" was configured to trigger from the HR system. It automatically provisions accounts, assigns training, and schedules a sequence of personalized welcome emails for the new hire\'s first week.',
     impact: 'This automation reduced manual onboarding tasks by 90%, ensuring a consistent and professional experience for every new employee. It freed up the HR team to focus on more strategic, human-centric initiatives.',
     tools: ['Zapier', 'BambooHR API', 'G-Suite', 'Slack API'],
-    image: PlaceHolderImages.find(p => p.id === 'project7')!,
+    image: [
+      PlaceHolderImages.find(p => p.id === 'project7-1')!,
+      PlaceHolderImages.find(p => p.id === 'project7-2')!,
+      PlaceHolderImages.find(p => p.id === 'project7-3')!,
+    ],
     link: '#',
   },
   {
