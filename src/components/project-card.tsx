@@ -186,13 +186,20 @@ export function ProjectCard({ project }: { project: Project }) {
             onClick={() => setIsZoomed(false)}
           >
             <button
-              onClick={() => setIsZoomed(false)}
-              className="absolute top-4 right-4 z-10 text-white hover:text-accent transition-colors"
+              onClick={(e) => {
+                e.stopPropagation();
+                setIsZoomed(false);
+              }}
+              className="absolute top-4 right-4 z-20 text-white hover:text-accent transition-colors"
             >
               <X className="h-8 w-8" />
               <span className="sr-only">Close</span>
             </button>
-            <div className="relative w-full h-full flex items-center justify-center">
+            
+            <div 
+              className="relative w-full h-full flex items-center justify-center"
+              onClick={(e) => e.stopPropagation()}
+            >
               <Image
                 src={currentImage.imageUrl}
                 alt={project.title}
@@ -201,6 +208,27 @@ export function ProjectCard({ project }: { project: Project }) {
                 className="max-h-[90vh] max-w-[90vw] object-contain rounded-lg shadow-2xl"
               />
             </div>
+            
+            {images.length > 1 && (
+              <>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full bg-black/30 text-white hover:bg-black/50 hover:text-white z-20"
+                  onClick={handlePrevImage}
+                >
+                  <ChevronLeft className="h-8 w-8" />
+                </Button>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full bg-black/30 text-white hover:bg-black/50 hover:text-white z-20"
+                  onClick={handleNextImage}
+                >
+                  <ChevronRight className="h-8 w-8" />
+                </Button>
+              </>
+            )}
           </div>
         )}
       </DialogContent>
