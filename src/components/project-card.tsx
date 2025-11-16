@@ -145,7 +145,7 @@ export function ProjectCard({ project }: { project: Project }) {
               {project.title}
             </DialogTitle>
           </DialogHeader>
-          <ScrollArea className="flex-1 pr-4 -mr-4 overflow-y-scroll">
+          <ScrollArea className="flex-1 pr-4">
             <div className="grid gap-6 py-4">
               <div>
                 <h4 className="mb-2 font-semibold text-foreground">Overview</h4>
