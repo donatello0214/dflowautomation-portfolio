@@ -85,7 +85,7 @@ export function ProjectCard({ project }: { project: Project }) {
             </div>
           </div>
         </DialogTrigger>
-        <DialogContent className="flex max-h-[95vh] max-w-xl flex-col border-accent/20 bg-background/80 shadow-lg shadow-accent/20 backdrop-blur-lg sm:rounded-lg">
+        <DialogContent className="flex max-h-[90vh] max-w-xl flex-col border-accent/20 bg-background/80 shadow-lg shadow-accent/20 backdrop-blur-lg sm:rounded-lg">
           <DialogHeader>
             <div
               className="relative mb-4 aspect-video w-full overflow-hidden rounded-lg"
