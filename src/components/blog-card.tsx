@@ -64,7 +64,7 @@ export function BlogCard({ article }: { article: BlogArticle }) {
             Published on {article.date}
           </DialogDescription>
         </DialogHeader>
-        <ScrollArea className="pr-4 -mr-4 flex-1">
+        <ScrollArea className="flex-1 pr-4 -mr-4">
           <div
             className="prose prose-sm dark:prose-invert text-foreground/80 py-4"
             dangerouslySetInnerHTML={{ __html: article.content }}
