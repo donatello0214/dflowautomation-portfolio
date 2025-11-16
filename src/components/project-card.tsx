@@ -94,7 +94,7 @@ export function ProjectCard({ project }: { project: Project }) {
                   alt={project.title}
                   width={1200}
                   height={675}
-                  className="h-full w-auto object-contain transition-opacity duration-300"
+                  className="h-full w-full object-contain transition-opacity duration-300"
                   data-ai-hint={currentImage.imageHint}
                 />
               </div>
@@ -197,7 +197,7 @@ export function ProjectCard({ project }: { project: Project }) {
             </button>
             
             <div 
-              className="relative w-full h-full flex items-center justify-center p-4"
+              className="relative w-[95vw] h-[95vh] flex items-center justify-center p-4"
               onClick={(e) => e.stopPropagation()}
             >
               <Image
@@ -205,7 +205,7 @@ export function ProjectCard({ project }: { project: Project }) {
                 alt={project.title}
                 width={1920}
                 height={1080}
-                className="h-full w-full object-contain rounded-lg shadow-2xl"
+                className="max-h-full max-w-full object-contain rounded-lg shadow-2xl"
               />
             </div>
             
