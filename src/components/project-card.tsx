@@ -21,7 +21,7 @@ import {
 import { Badge } from './ui/badge';
 import { useState } from 'react';
 import { cn } from '@/lib/utils';
-import { ScrollArea, ScrollBar } from './ui/scroll-area';
+import { ScrollArea } from './ui/scroll-area';
 
 export function ProjectCard({ project }: { project: Project }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -146,7 +146,7 @@ export function ProjectCard({ project }: { project: Project }) {
             </DialogTitle>
           </DialogHeader>
           <ScrollArea className="pr-4 -mr-4 flex-1">
-            <div className="grid gap-6">
+            <div className="grid gap-6 py-4">
               <div>
                 <h4 className="mb-2 font-semibold text-foreground">Overview</h4>
                 <p className="text-foreground/80">{project.overview}</p>
