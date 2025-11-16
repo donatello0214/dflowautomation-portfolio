@@ -64,13 +64,13 @@ export function BlogCard({ article }: { article: BlogArticle }) {
             Published on {article.date}
           </DialogDescription>
         </DialogHeader>
-        <ScrollArea className="flex-1 pr-4 -mr-4">
+        <ScrollArea className="flex-1 pr-6">
           <div
-            className="prose prose-sm dark:prose-invert text-foreground/80 py-4"
+            className="prose prose-sm dark:prose-invert max-w-none py-4 text-foreground/80"
             dangerouslySetInnerHTML={{ __html: article.content }}
           />
         </ScrollArea>
-         <div className="mt-4 flex justify-end pt-4 border-t">
+         <div className="mt-4 flex justify-end border-t pt-4">
             <DialogClose asChild>
               <Button asChild className="text-blue-500">
                 <a href="/#contact">
