@@ -185,7 +185,7 @@ export function ProjectCard({ project }: { project: Project }) {
       
       {isZoomed && (
         <div
-          className="fixed inset-0 z-[999] flex items-center justify-center bg-black/80 backdrop-blur-sm animate-in fade-in-50 cursor-zoom-out"
+          className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/80 backdrop-blur-sm animate-in fade-in-50 cursor-zoom-out"
           onClick={() => setIsZoomed(false)}
         >
           <button
