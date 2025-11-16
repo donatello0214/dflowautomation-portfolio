@@ -85,7 +85,7 @@ export function ProjectCard({ project }: { project: Project }) {
             </div>
           </div>
         </DialogTrigger>
-        <DialogContent className="flex max-h-[90vh] max-w-2xl flex-col border-accent/20 bg-background/80 shadow-lg shadow-accent/20 backdrop-blur-lg sm:rounded-lg">
+        <DialogContent className="flex max-h-[90vh] max-w-xl flex-col border-accent/20 bg-background/80 shadow-lg shadow-accent/20 backdrop-blur-lg sm:rounded-lg">
           <DialogHeader>
             <div
               className="relative mb-4 aspect-video w-full overflow-hidden rounded-lg"
@@ -145,7 +145,7 @@ export function ProjectCard({ project }: { project: Project }) {
               {project.title}
             </DialogTitle>
           </DialogHeader>
-          <ScrollArea className="flex-1 pr-4" style={{ overflowY: 'scroll' }}>
+          <ScrollArea className="flex-1 pr-4" style={{ overflowY: 'auto' }}>
             <div className="grid gap-6 py-4">
               <div>
                 <h4 className="mb-2 font-semibold text-foreground">Overview</h4>
