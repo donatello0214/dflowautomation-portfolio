@@ -170,7 +170,7 @@ export function Contact() {
               </DialogContent>
             </Dialog>
         </div>
-        <div className="relative rounded-lg border border-accent/20 bg-card p-8 shadow-lg shadow-accent/20">
+        <div className="relative rounded-lg border border-accent/20 bg-card p-4 sm:p-8 shadow-lg shadow-accent/20">
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">

@@ -59,6 +59,12 @@ export function Header() {
               {item.label}
             </Link>
           ))}
+          <Link
+              href="/projects"
+              className="font-medium text-foreground/60 transition-colors hover:text-foreground/80"
+            >
+              All Projects
+            </Link>
         </nav>
         <div className="flex flex-1 items-center justify-end gap-4">
           <div className="hidden md:block">
@@ -94,6 +100,13 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
+            <Link
+                href="/projects"
+                className="w-full rounded-md p-2 font-medium text-foreground/80 transition-colors hover:bg-accent/10"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                All Projects
+              </Link>
             <Button asChild className="w-full">
               <a href={contactHref} onClick={() => setIsMobileMenuOpen(false)}>
                 Contact

@@ -47,7 +47,7 @@ export function About() {
               transforming complex manual processes into streamlined, intelligent
               systems that drive growth and efficiency.
             </p>
-            <ul className="mt-6 grid grid-cols-2 gap-4">
+            <ul className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
               {expertise.map((item) => (
                 <li key={item} className="flex items-center gap-2">
                   <CheckCircle className="h-5 w-5 text-accent" />
