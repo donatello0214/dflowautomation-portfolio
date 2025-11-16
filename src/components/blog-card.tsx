@@ -57,14 +57,14 @@ export function BlogCard({ article }: { article: BlogArticle }) {
               data-ai-hint={article.image.imageHint}
             />
           </div>
-          <DialogTitle className="font-headline text-3xl font-bold text-blue-500">
+          <DialogTitle className="font-headline text-2xl font-bold text-blue-500">
             {article.title}
           </DialogTitle>
           <DialogDescription className="text-muted-foreground">
             Published on {article.date}
           </DialogDescription>
         </DialogHeader>
-        <ScrollArea className="flex-1 pr-6">
+        <ScrollArea className="flex-1 pr-6 overflow-y-scroll">
           <div
             className="prose prose-sm dark:prose-invert max-w-none py-4 text-foreground/80"
             dangerouslySetInnerHTML={{ __html: article.content }}

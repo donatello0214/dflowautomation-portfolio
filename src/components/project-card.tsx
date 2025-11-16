@@ -141,11 +141,11 @@ export function ProjectCard({ project }: { project: Project }) {
                 </>
               )}
             </div>
-            <DialogTitle className="font-headline text-3xl font-bold text-blue-500">
+            <DialogTitle className="font-headline text-2xl font-bold text-blue-500">
               {project.title}
             </DialogTitle>
           </DialogHeader>
-          <ScrollArea className="flex-1 pr-4">
+          <ScrollArea className="flex-1 pr-4 overflow-y-scroll">
             <div className="grid gap-6 py-4">
               <div>
                 <h4 className="mb-2 font-semibold text-foreground">Overview</h4>
