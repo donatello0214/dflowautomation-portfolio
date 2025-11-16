@@ -47,15 +47,12 @@ export function ProjectCard({ project }: { project: Project }) {
     setIsModalOpen(open);
     if (!open) {
       setCurrentImageIndex(0);
+      setIsZoomed(false); // Also close zoom view if main modal is closed
     }
   };
 
   const onZoomOpenChange = (open: boolean) => {
     setIsZoomed(open);
-    // Keep the main modal open when closing the zoom view
-    if (!open) {
-      setIsModalOpen(true);
-    }
   }
 
   return (
@@ -90,97 +87,96 @@ export function ProjectCard({ project }: { project: Project }) {
         </DialogTrigger>
         <DialogContent className="max-w-3xl border-accent/20 bg-background/80 shadow-lg shadow-accent/20 backdrop-blur-lg sm:rounded-lg max-h-[90vh] flex flex-col">
           <DialogHeader>
-            <ScrollArea className="w-full whitespace-nowrap rounded-lg border">
-              <div
-                className="relative mb-4 aspect-video w-full overflow-hidden rounded-lg"
-              >
-                <DialogTrigger asChild onClick={() => setIsZoomed(true)}>
-                  <div
-                    className="w-full h-full cursor-zoom-in"
-                  >
-                    <Image
-                      src={currentImage.imageUrl}
-                      alt={project.title}
-                      width={1200}
-                      height={675}
-                      className="h-full w-full object-contain transition-opacity duration-300"
-                      data-ai-hint={currentImage.imageHint}
-                    />
-                  </div>
-                </DialogTrigger>
+            <div
+              className="relative mb-4 aspect-video w-full overflow-hidden rounded-lg"
+            >
+                <div
+                  className="w-full h-full cursor-zoom-in"
+                  onClick={() => onZoomOpenChange(true)}
+                >
+                  <Image
+                    src={currentImage.imageUrl}
+                    alt={project.title}
+                    width={1200}
+                    height={675}
+                    className="h-full w-full object-contain transition-opacity duration-300"
+                    data-ai-hint={currentImage.imageHint}
+                  />
+                </div>
+              
 
-                {images.length > 1 && (
-                  <>
-                    <Button
-                      variant="ghost"
-                      size="icon"
-                      className="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-black/30 text-white hover:bg-black/50 hover:text-white"
-                      onClick={handlePrevImage}
-                    >
-                      <ChevronLeft className="h-6 w-6" />
-                    </Button>
-                    <Button
-                      variant="ghost"
-                      size="icon"
-                      className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-black/30 text-white hover:bg-black/50 hover:text-white"
-                      onClick={handleNextImage}
-                    >
-                      <ChevronRight className="h-6 w-6" />
-                    </Button>
-                    <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex space-x-2">
-                      {images.map((_, index) => (
-                        <button
-                          key={index}
-                          className={cn(
-                            'h-2 w-2 rounded-full bg-white/50 transition-colors',
-                            index === currentImageIndex && 'bg-white'
-                          )}
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            setCurrentImageIndex(index);
-                          }}
-                        />
-                      ))}
-                    </div>
-                  </>
-                )}
-              </div>
-              <ScrollBar orientation="horizontal" />
-            </ScrollArea>
+              {images.length > 1 && (
+                <>
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-black/30 text-white hover:bg-black/50 hover:text-white"
+                    onClick={handlePrevImage}
+                  >
+                    <ChevronLeft className="h-6 w-6" />
+                  </Button>
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-black/30 text-white hover:bg-black/50 hover:text-white"
+                    onClick={handleNextImage}
+                  >
+                    <ChevronRight className="h-6 w-6" />
+                  </Button>
+                  <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex space-x-2">
+                    {images.map((_, index) => (
+                      <button
+                        key={index}
+                        className={cn(
+                          'h-2 w-2 rounded-full bg-white/50 transition-colors',
+                          index === currentImageIndex && 'bg-white'
+                        )}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setCurrentImageIndex(index);
+                        }}
+                      />
+                    ))}
+                  </div>
+                </>
+              )}
+            </div>
             <DialogTitle className="font-headline text-3xl font-bold text-blue-500">
               {project.title}
             </DialogTitle>
           </DialogHeader>
-          <div className="grid gap-6 overflow-y-auto pr-4 flex-1">
-            <div>
-              <h4 className="mb-2 font-semibold text-foreground">Overview</h4>
-              <p className="text-foreground/80">{project.overview}</p>
-            </div>
-            <div>
-              <h4 className="mb-2 font-semibold text-foreground">Problem</h4>
-              <p className="text-foreground/80">{project.problem}</p>
-            </div>
-            <div>
-              <h4 className="mb-2 font-semibold text-foreground">Solution</h4>
-              <p className="text-foreground/80">{project.solution}</p>
-            </div>
-            <div>
-              <h4 className="mb-2 font-semibold text-foreground">Impact</h4>
-              <p className="text-foreground/80">{project.impact}</p>
-            </div>
+          <ScrollArea className="pr-4 -mr-4 flex-1">
+            <div className="grid gap-6">
+              <div>
+                <h4 className="mb-2 font-semibold text-foreground">Overview</h4>
+                <p className="text-foreground/80">{project.overview}</p>
+              </div>
+              <div>
+                <h4 className="mb-2 font-semibold text-foreground">Problem</h4>
+                <p className="text-foreground/80">{project.problem}</p>
+              </div>
+              <div>
+                <h4 className="mb-2 font-semibold text-foreground">Solution</h4>
+                <p className="text-foreground/80">{project.solution}</p>
+              </div>
+              <div>
+                <h4 className="mb-2 font-semibold text-foreground">Impact</h4>
+                <p className="text-foreground/80">{project.impact}</p>
+              </div>
 
-            <div>
-              <h4 className="mb-2 font-semibold text-foreground">Tools Used</h4>
-              <div className="flex flex-wrap gap-2">
-                {project.tools.map((tool) => (
-                  <Badge key={tool} variant="secondary">
-                    {tool}
-                  </Badge>
-                ))}
+              <div>
+                <h4 className="mb-2 font-semibold text-foreground">Tools Used</h4>
+                <div className="flex flex-wrap gap-2">
+                  {project.tools.map((tool) => (
+                    <Badge key={tool} variant="secondary">
+                      {tool}
+                    </Badge>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
-          <div className="mt-4 flex justify-end">
+          </ScrollArea>
+          <div className="mt-4 flex justify-end pt-4 border-t">
             <DialogClose asChild>
               <Button asChild className="text-blue-500">
                 <a href="/#contact">
@@ -191,15 +187,19 @@ export function ProjectCard({ project }: { project: Project }) {
           </div>
         </DialogContent>
       </Dialog>
-      
+
       <Dialog open={isZoomed} onOpenChange={onZoomOpenChange}>
-        <DialogContent 
+        <DialogContent
           className="bg-black/80 p-0 border-0 max-w-none w-screen h-screen rounded-none flex items-center justify-center backdrop-blur-sm"
           hideCloseButton={true}
         >
+          <DialogHeader className="sr-only">
+             <DialogTitle>Zoomed image of {project.title}</DialogTitle>
+          </DialogHeader>
           <button
-            onClick={() => setIsZoomed(false)}
-            className="absolute top-4 right-4 z-20 text-white hover:text-accent transition-colors"
+            onClick={() => onZoomOpenChange(false)}
+            className="absolute top-4 right-4 z-[10000] text-white hover:text-accent transition-colors"
+            aria-label="Close zoomed image"
           >
             <X className="h-8 w-8" />
             <span className="sr-only">Close</span>
@@ -222,7 +222,7 @@ export function ProjectCard({ project }: { project: Project }) {
               <Button
                 variant="ghost"
                 size="icon"
-                className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full bg-black/30 text-white hover:bg-black/50 hover:text-white z-20"
+                className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full bg-black/30 text-white hover:bg-black/50 hover:text-white z-[10000]"
                 onClick={handlePrevImage}
               >
                 <ChevronLeft className="h-8 w-8" />
@@ -230,7 +230,7 @@ export function ProjectCard({ project }: { project: Project }) {
               <Button
                 variant="ghost"
                 size="icon"
-                className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full bg-black/30 text-white hover:bg-black/50 hover:text-white z-20"
+                className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full bg-black/30 text-white hover:bg-black/50 hover:text-white z-[10000]"
                 onClick={handleNextImage}
               >
                 <ChevronRight className="h-8 w-8" />
