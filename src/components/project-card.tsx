@@ -197,7 +197,7 @@ export function ProjectCard({ project }: { project: Project }) {
             </button>
             
             <div 
-              className="relative h-[90vh] w-[90vw] flex items-center justify-center"
+              className="relative h-[95vh] w-[95vw] flex items-center justify-center"
               onClick={(e) => e.stopPropagation()}
             >
               <Image
