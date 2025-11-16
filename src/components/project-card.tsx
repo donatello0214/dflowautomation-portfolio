@@ -7,7 +7,6 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-  DialogDescription,
   DialogClose,
 } from '@/components/ui/dialog';
 import Image from 'next/image';
@@ -25,6 +24,7 @@ import { cn } from '@/lib/utils';
 import { ScrollArea, ScrollBar } from './ui/scroll-area';
 
 export function ProjectCard({ project }: { project: Project }) {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [isZoomed, setIsZoomed] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -44,16 +44,24 @@ export function ProjectCard({ project }: { project: Project }) {
   };
 
   const onModalOpenChange = (open: boolean) => {
+    setIsModalOpen(open);
     if (!open) {
-      setIsZoomed(false);
       setCurrentImageIndex(0);
     }
   };
 
+  const onZoomOpenChange = (open: boolean) => {
+    setIsZoomed(open);
+    // Keep the main modal open when closing the zoom view
+    if (!open) {
+      setIsModalOpen(true);
+    }
+  }
+
   return (
     <>
-      <Dialog onOpenChange={onModalOpenChange}>
-        <DialogTrigger asChild>
+      <Dialog open={isModalOpen} onOpenChange={onModalOpenChange}>
+        <DialogTrigger asChild onClick={() => setIsModalOpen(true)}>
           <div className="group relative flex h-full cursor-pointer flex-col overflow-hidden rounded-lg bg-gray-800 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-accent/30 hover:shadow-xl">
             <div className="relative z-20 flex h-full flex-col justify-between p-6">
               <div>
@@ -86,19 +94,20 @@ export function ProjectCard({ project }: { project: Project }) {
               <div
                 className="relative mb-4 aspect-video w-full overflow-hidden rounded-lg"
               >
-                <div
-                  className="w-full h-full cursor-zoom-in"
-                  onClick={() => setIsZoomed(true)}
-                >
-                  <Image
-                    src={currentImage.imageUrl}
-                    alt={project.title}
-                    width={1200}
-                    height={675}
-                    className="h-full w-full object-contain transition-opacity duration-300"
-                    data-ai-hint={currentImage.imageHint}
-                  />
-                </div>
+                <DialogTrigger asChild onClick={() => setIsZoomed(true)}>
+                  <div
+                    className="w-full h-full cursor-zoom-in"
+                  >
+                    <Image
+                      src={currentImage.imageUrl}
+                      alt={project.title}
+                      width={1200}
+                      height={675}
+                      className="h-full w-full object-contain transition-opacity duration-300"
+                      data-ai-hint={currentImage.imageHint}
+                    />
+                  </div>
+                </DialogTrigger>
 
                 {images.length > 1 && (
                   <>
@@ -183,16 +192,13 @@ export function ProjectCard({ project }: { project: Project }) {
         </DialogContent>
       </Dialog>
       
-      {isZoomed && (
-        <div
-          className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/80 backdrop-blur-sm animate-in fade-in-50 cursor-zoom-out"
-          onClick={() => setIsZoomed(false)}
+      <Dialog open={isZoomed} onOpenChange={onZoomOpenChange}>
+        <DialogContent 
+          className="bg-black/80 p-0 border-0 max-w-none w-screen h-screen rounded-none flex items-center justify-center backdrop-blur-sm"
+          hideCloseButton={true}
         >
           <button
-            onClick={(e) => {
-              e.stopPropagation();
-              setIsZoomed(false);
-            }}
+            onClick={() => setIsZoomed(false)}
             className="absolute top-4 right-4 z-20 text-white hover:text-accent transition-colors"
           >
             <X className="h-8 w-8" />
@@ -200,8 +206,7 @@ export function ProjectCard({ project }: { project: Project }) {
           </button>
           
           <div 
-            className="relative h-full w-full flex items-center justify-center p-4"
-            onClick={(e) => e.stopPropagation()}
+            className="relative h-full w-full flex items-center justify-center"
           >
             <Image
               src={currentImage.imageUrl}
@@ -232,8 +237,8 @@ export function ProjectCard({ project }: { project: Project }) {
               </Button>
             </>
           )}
-        </div>
-      )}
+        </DialogContent>
+      </Dialog>
     </>
   );
 }
