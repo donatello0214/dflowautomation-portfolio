@@ -62,7 +62,7 @@ export function ProjectCard({ project }: { project: Project }) {
                   alt={project.title}
                   width={600}
                   height={400}
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="h-full w-full object-cover"
                   data-ai-hint={images[0].imageHint}
                 />
               </div>
@@ -197,7 +197,7 @@ export function ProjectCard({ project }: { project: Project }) {
             </button>
             
             <div 
-              className="relative w-full h-full flex items-center justify-center"
+              className="relative w-full h-full flex items-center justify-center p-4"
               onClick={(e) => e.stopPropagation()}
             >
               <Image
@@ -205,7 +205,7 @@ export function ProjectCard({ project }: { project: Project }) {
                 alt={project.title}
                 width={1920}
                 height={1080}
-                className="h-full w-full object-cover rounded-lg shadow-2xl"
+                className="h-full w-full object-contain rounded-lg shadow-2xl"
               />
             </div>
             
