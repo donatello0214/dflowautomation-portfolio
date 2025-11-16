@@ -13,6 +13,7 @@ import {
 import Image from 'next/image';
 import { Button } from './ui/button';
 import { ArrowUpRight, MessageCircle } from 'lucide-react';
+import { ScrollArea } from './ui/scroll-area';
 
 export function BlogCard({ article }: { article: BlogArticle }) {
   return (
@@ -63,13 +64,13 @@ export function BlogCard({ article }: { article: BlogArticle }) {
             Published on {article.date}
           </DialogDescription>
         </DialogHeader>
-        <div className="overflow-y-auto pr-4 flex-1">
+        <ScrollArea className="pr-4 -mr-4 flex-1">
           <div
             className="prose prose-sm dark:prose-invert text-foreground/80"
             dangerouslySetInnerHTML={{ __html: article.content }}
           />
-        </div>
-         <div className="mt-4 flex justify-end">
+        </ScrollArea>
+         <div className="mt-4 flex justify-end pt-4 border-t">
             <DialogClose asChild>
               <Button asChild className="text-blue-500">
                 <a href="/#contact">
