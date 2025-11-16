@@ -205,7 +205,7 @@ export function ProjectCard({ project }: { project: Project }) {
                 alt={project.title}
                 width={1920}
                 height={1080}
-                className="max-h-[95vh] max-w-[95vw] object-contain rounded-lg shadow-2xl"
+                className="max-h-[100vh] max-w-[100vw] object-contain rounded-lg shadow-2xl"
               />
             </div>
             
