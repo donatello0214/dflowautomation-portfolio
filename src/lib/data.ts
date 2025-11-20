@@ -46,7 +46,7 @@ export const projects: Project[] = [
     overview: 'An n8n-powered AI chatbot for Facebook Messenger that automates customer communication. It handles inquiries and sales conversations 24/7, providing instant, intelligent responses and streamlining daily workflows without human intervention.',
     problem: 'Clients struggled with managing high volumes of customer inquiries and sales conversations on Facebook, leading to slow response times, missed opportunities, and high operational costs due to manual effort.',
     solution: 'An AI chatbot was developed to automate responses, handle FAQs, book appointments, and recommend products. It intelligently manages conversations, minimizing the need for constant human supervision and freeing up staff.',
-    impact: 'The chatbot increased sales by up to 60%, significantly reduced labor costs, and improved customer engagement with faster response times, leading to stronger lead nurturing and greater customer loyalty.',
+    impact: 'The chatbot increased sales by up to 40%, significantly reduced labor costs, and improved customer engagement with faster response times, leading to stronger lead nurturing and greater customer loyalty.',
     tools: ['n8n', 'Google Gemini API', 'FB Messenger API', 'Google Sheets'],
     image: PlaceHolderImages.find(p => p.id === 'project1')!,
     link: '#',
@@ -161,6 +161,18 @@ export const projects: Project[] = [
     impact: 'This automation completely eliminated manual order entry and reduced inventory discrepancies by 99%. It led to faster fulfillment, fewer stock-related customer issues, and improved overall operational efficiency.',
     tools: ['Make.com', 'Shopify API', 'Google Sheets', 'REST API'],
     image: PlaceHolderImages.find(p => p.id === 'project10')!,
+    link: '#',
+  },
+  {
+    id: '11',
+    title: 'Automated GoHighLevel SaaS Onboarding',
+    description: 'A complete, hands-off onboarding system for new SaaS clients on GoHighLevel.',
+    overview: 'This workflow automates the entire client onboarding process for a SaaS business built on GoHighLevel. From the moment a new client signs up, the system handles account creation, welcome emails, and initial setup, ensuring a seamless and professional experience without any manual intervention.',
+    problem: 'The client was manually onboarding each new SaaS user, which was time-consuming, prone to error, and created a delay in the user\'s ability to start using the platform. This led to a poor first impression and limited the scalability of the business.',
+    solution: 'An automated workflow was built within GoHighLevel. When a new user signs up, it triggers a sequence that creates their sub-account, applies the correct settings and snapshots, sends a series of welcome and instructional emails, and tags them for long-term nurturing campaigns.',
+    impact: 'The automation reduced new client onboarding time from hours to seconds, allowing the business to scale rapidly. It ensured every user received a consistent, high-quality onboarding experience, which improved initial user satisfaction and long-term retention rates.',
+    tools: ['GoHighLevel', 'Stripe API', 'SendGrid'],
+    image: PlaceHolderImages.find(p => p.id === 'project11')!,
     link: '#',
   }
 ];

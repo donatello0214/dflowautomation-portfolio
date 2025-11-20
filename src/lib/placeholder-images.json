@@ -61,6 +61,12 @@
       "imageHint": "sales funnel"
     },
     {
+      "id": "project11",
+      "description": "GoHighLevel SaaS Onboarding",
+      "imageUrl": "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxTYWFTJTIwb25ib2FyZGluZ3xlbnwwfHx8fDE3NjIyOTg0NjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "SaaS onboarding"
+    },
+    {
       "id": "blog1",
       "description": "AI Agents and Workflow Automation Blog Image",
       "imageUrl": "/images/images/blog1.svg",
