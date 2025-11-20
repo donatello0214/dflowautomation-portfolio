@@ -8,7 +8,7 @@
     },
     {
       "id": "project2",
-      "description": "Auto Sort Gmail Attachments on Drive",
+      "description": "Auto Sort Gmail Attachments on Google Drive",
       "imageUrl": "/images/images/make-project1.png",
       "imageHint": "Make.com"
     },
@@ -56,62 +56,62 @@
     },
     {
       "id": "project8",
-      "description": "GoHighLevel Funnel Automation",
-      "imageUrl": "https://images.unsplash.com/photo-1553484771-371a605b060b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzYWxlcyUyMGZ1bm5lbHxlbnwwfHx8fDE3NjIyMTE3MDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Facebook 3 Steps Funnel Automation",
+      "imageUrl": "/images/images/1. GHL Project 1.png",
       "imageHint": "sales funnel"
     },
     {
       "id": "project8-1",
-      "description": "GoHighLevel Funnel Automation Image 1",
-      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzYWxlcyUyMGZ1bm5lbHxlbnwwfHx8fDE3NjM2MzQ5ODB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Facebook 3 Steps Funnel Automation Image 1",
+      "imageUrl": "/images/images/1. GHL Project 1.png",
       "imageHint": "sales funnel"
     },
     {
       "id": "project8-2",
-      "description": "GoHighLevel Funnel Automation Image 2",
-      "imageUrl": "https://images.unsplash.com/photo-1748873611377-a7d28d1537b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxsZWFkJTIwbnVydHVyaW5nfGVufDB8fHx8MTc2MzYzNDk4MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Facebook 3 Steps Funnel Automation Image 2",
+      "imageUrl": "/images/images/2. GHL Project 1.png",
       "imageHint": "lead nurturing"
     },
     {
       "id": "project8-3",
-      "description": "GoHighLevel Funnel Automation Image 3",
-      "imageUrl": "https://images.unsplash.com/photo-1760952851538-17a59f691efe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhdXRvbWF0aW9uJTIwd29ya2Zsb3d8ZW58MHx8fHwxNzYzNTc1MjE5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Facebook 3 Steps Funnel Automation Image 3",
+      "imageUrl": "/images/images/3. GHL Project 1.png",
       "imageHint": "automation workflow"
     },
     {
       "id": "project8-4",
-      "description": "GoHighLevel Funnel Automation Image 4",
-      "imageUrl": "https://images.unsplash.com/photo-1701674369013-e855eec245fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bWFya2V0aW5nJTIwY2FtcGFpZ258ZW58MHx8fHwxNzYzNTQwMjMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Facebook 3 Steps Funnel Automation Image 4",
+      "imageUrl": "/images/images/4. GHL Project 1.png",
       "imageHint": "marketing campaign"
     },
     {
       "id": "project8-5",
-      "description": "GoHighLevel Funnel Automation Image 5",
-      "imageUrl": "https://images.unsplash.com/photo-1686061594225-3e92c0cd51b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkYXNoYm9hcmQlMjBhbmFseXRpY3N8ZW58MHx8fHwxNzYzNjEwNDMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Facebook 3 Steps Funnel Automation Image 5",
+      "imageUrl": "/images/images/5. GHL Project 1.png",
       "imageHint": "dashboard analytics"
     },
     {
       "id": "project8-6",
-      "description": "GoHighLevel Funnel Automation Image 6",
-      "imageUrl": "https://picsum.photos/seed/ghl6/600/400",
+      "description": "Facebook 3 Steps Funnel Automation Image 6",
+      "imageUrl": "/images/images/6. GHL Project 1.png",
       "imageHint": "crm integration"
     },
     {
       "id": "project8-7",
-      "description": "GoHighLevel Funnel Automation Image 7",
-      "imageUrl": "https://images.unsplash.com/flagged/photo-1550946107-8842ae9426db?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjdXN0b21lciUyMGpvdXJuZXl8ZW58MHx8fHwxNzYzNjM0OTgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Facebook 3 Steps Funnel Automation Image 7",
+      "imageUrl": "/images/images/7. GHL Project 1.png",
       "imageHint": "customer journey"
     },
     {
       "id": "project8-8",
-      "description": "GoHighLevel Funnel Automation Image 8",
-      "imageUrl": "https://images.unsplash.com/photo-1659277318898-9562d00c3b49?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhcHBvaW50bWVudCUyMHNldHRpbmd8ZW58MHx8fHwxNzYzNjM0OTgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Facebook 3 Steps Funnel Automation Image 8",
+      "imageUrl": "/images/images/8. GHL Project 1.png",
       "imageHint": "appointment setting"
     },
     {
       "id": "project11",
       "description": "GoHighLevel SaaS Onboarding",
-      "imageUrl": "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxTYWFTJTIwb25ib2FyZGluZ3xlbnwwfHx8fDE3NjIyOTg0NjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/images/GHL Project 2.png",
       "imageHint": "SaaS onboarding"
     },
     {
@@ -165,7 +165,7 @@
     {
       "id": "project10",
       "description": "E-commerce Order & Inventory Sync",
-      "imageUrl": "https://images.unsplash.com/photo-1579548122204-c481a547c1f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxlY29tbWVyY2UlMjBzeW5jfGVufDB8fHx8MTc2MjI3NzAwNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/images/make-project-3.png",
       "imageHint": "ecommerce sync"
     }
   ]

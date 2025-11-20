@@ -1,4 +1,5 @@
 
+
 import { PlaceHolderImages } from './placeholder-images';
 import { techStack } from './tech-stack';
 
@@ -53,8 +54,8 @@ export const projects: Project[] = [
   },
   {
     id: '2',
-    title: 'Auto Sort Gmail Attachments on Drive',
-    description: 'Auto Sort Gmail Attachments on Drive automates fetching unread email attachments, renames files with AI, uploads to Google Drive, logs info in Sheets, and sends summary notifications.',
+    title: 'Auto Sort Gmail Attachments on Google Drive',
+    description: 'Auto Sort Gmail Attachments on Google Drive automates fetching unread email attachments, renames files with AI, uploads to Google Drive, logs info in Sheets, and sends summary notifications.',
     overview: 'This workflow automates retrieving unread email attachments, using AI to generate concise filenames. It uploads files to Google Drive, logs details in Sheets, and sends notification emails to clients.',
     problem: 'The client faced challenges with managing and organizing a high volume of email attachments, leading to disorganized files, manual data entry, and wasted time searching for important documents.',
     solution: 'An automated system was created to fetch attachments, rename them intelligently, upload to Google Drive, log information in Google Sheets, and notify users, ensuring a streamlined and organized process.',
@@ -129,13 +130,13 @@ export const projects: Project[] = [
   },
   {
     id: '8',
-    title: 'GoHighLevel Funnel Automation',
-    description: 'AI-powered lead nurturing and appointment setting funnel.',
-    overview: 'An advanced GoHighLevel workflow that captures leads from Facebook Ads and uses an AI-driven sequence of SMS and email to nurture them, booking qualified prospects directly into a calendar.',
-    problem: 'The sales team was overwhelmed with manually following up on leads from ad campaigns, resulting in missed opportunities and a low conversion rate for qualified appointments.',
-    solution: 'A fully automated funnel was created in GoHighLevel. It engages leads with an AI chatbot via SMS/email, answers questions, and qualifies them before automatically booking appointments with sales reps.',
-    impact: 'The system created a 24/7, fully automated top-of-funnel that significantly increased the number of qualified appointments. It allowed the sales team to focus on closing deals rather than chasing cold leads.',
-    tools: ['GoHighLevel', 'Facebook Ads API', 'OpenAI', 'Calendly API'],
+    title: 'Facebook 3 Steps Funnel Automation',
+    description: 'A comprehensive HighLevel ecosystem automating the sales funnel from Facebook lead capture to closing. It streamlines nurturing, manages appointment lifecycles, and dynamically updates pipeline stages to maximize conversion efficiency.',
+    overview: 'A comprehensive HighLevel (GHL) automation ecosystem designed to capture Facebook leads, automate multi-channel follow-ups (SMS/Email), manage appointment lifecycles, and streamline pipeline stages from initial inquiry to closed deal.',
+    problem: 'Manual lead management caused delayed responses, resulting in lost opportunities and high appointment no-show rates. The business lacked a cohesive system to track lead status, manage cancellations, or re-engage unresponsive prospects effectively.',
+    solution: 'I engineered an end-to-end workflow that automates immediate nurture, halts sequences upon response, enforces appointment reminders to reduce no-shows, and dynamically updates pipeline stages based on real-time lead behavior and booking status.',
+    impact: 'The system drastically reduced manual workload while increasing lead conversion rates. It ensured 24/7 responsiveness, minimized appointment no-shows through automated reminders, and provided the client with clear, automated visibility into sales performance.',
+    tools: ['GoHighLevel', 'Facebook Ads API', 'Google', 'Google Calendar'],
     image: [
         PlaceHolderImages.find(p => p.id === 'project8-1')!,
         PlaceHolderImages.find(p => p.id === 'project8-2')!,
@@ -162,27 +163,39 @@ export const projects: Project[] = [
   },
   {
     id: '10',
-    title: 'E-commerce Order & Inventory Sync',
-    description: 'Automated syncing of orders and inventory between Shopify and an external fulfillment service.',
-    overview: 'A Make.com scenario that provides real-time, automated synchronization of orders and inventory between a Shopify store and a third-party logistics (3PL) provider, ensuring seamless e-commerce operations.',
-    problem: 'The client was manually entering Shopify orders into their 3PL system and updating inventory levels. This process was slow, error-prone, and often led to overselling and shipping delays.',
-    solution: 'A Make.com workflow was created to monitor new Shopify orders, instantly send them to the 3PL\'s API, and update inventory levels on both platforms. It also syncs shipping confirmations back.',
-    impact: 'This automation completely eliminated manual order entry and reduced inventory discrepancies by 99%. It led to faster fulfillment, fewer stock-related customer issues, and improved overall operational efficiency.',
-    tools: ['Make.com', 'Shopify API', 'Google Sheets', 'REST API'],
+    title: 'Lead Qualifier + Research + Voice Agent with Proposal Generator',
+    description: 'An autonomous sales agent that researches leads, performs voice qualification via VAPI, and instantly generates proposals or follow-up communications.',
+    overview: 'This Make.com scenario integrates Airtable, Perplexity AI, and VAPI to autonomously research and call new leads. It intelligently routes outcomes to generate PandaDoc proposals or send email follow-ups via Gmail.',
+    problem: 'Sales teams often struggle to instantly research and contact incoming leads. Delayed responses and manual proposal drafting processes result in missed opportunities and a slow, inefficient sales pipeline.',
+    solution: 'I created a fully automated workflow that uses AI to research and call leads, then dynamically generates custom PandaDoc proposals or sends follow-up emails based on the call outcome.',
+    impact: 'This system ensures immediate lead engagement and consistent follow-up. It drastically reduces administrative overhead, allowing the sales team to focus purely on closing pre-qualified, high-intent opportunities.',
+    tools: ['Make.com', 'VAPI', 'Slack API', 'Airtable API', 'Gmail API', 'Perplexity AI API', 'Pandadoc'],
     image: PlaceHolderImages.find(p => p.id === 'project10')!,
     link: '#',
   },
   {
     id: '11',
-    title: 'Automated GoHighLevel SaaS Onboarding',
-    description: 'A complete, hands-off onboarding system for new SaaS clients on GoHighLevel.',
-    overview: 'This workflow automates the entire client onboarding process for a SaaS business built on GoHighLevel. From the moment a new client signs up, the system handles account creation, welcome emails, and initial setup, ensuring a seamless and professional experience without any manual intervention.',
-    problem: 'The client was manually onboarding each new SaaS user, which was time-consuming, prone to error, and created a delay in the user\'s ability to start using the platform. This led to a poor first impression and limited the scalability of the business.',
-    solution: 'An automated workflow was built within GoHighLevel. When a new user signs up, it triggers a sequence that creates their sub-account, applies the correct settings and snapshots, sends a series of welcome and instructional emails, and tags them for long-term nurturing campaigns.',
-    impact: 'The automation reduced new client onboarding time from hours to seconds, allowing the business to scale rapidly. It ensured every user received a consistent, high-quality onboarding experience, which improved initial user satisfaction and long-term retention rates.',
-    tools: ['GoHighLevel', 'Stripe API', 'SendGrid'],
+    title: 'Conversational AI for FB Messenger Appointment Booking Chatbot',
+    description: 'An intelligent HighLevel (GHL) chatbot that engages Facebook Messenger leads, handles appointment booking conversations, and automates follow-up for unresponsive users.',
+    overview: 'This HighLevel workflow utilizes "Conversation AI" to converse with leads directly in Messenger. It features complex branching logic to handle booking requests, timeouts, and successful appointment scheduling without human intervention.',
+    problem: 'Managing Facebook Messenger inquiries manually is time-consuming and prone to delays. Leads often go cold if they don\'t receive immediate replies, and scheduling appointments requires constant back-and-forth communication.',
+    solution: 'I deployed an AI-driven workflow that instantly engages Messenger leads. It automatically attempts to book appointments, detects when a user stops responding (timeouts), and triggers re-engagement attempts or notifications accordingly.',
+    impact: 'The chatbot ensures 24/7 instant engagement for all Messenger inquiries, significantly increasing lead-to-appointment conversion rates while removing the need for a human support agent to handle routine scheduling tasks.',
+    tools: ['GoHighLevel', 'Gmail API', 'OpenAI'],
     image: PlaceHolderImages.find(p => p.id === 'project11')!,
     link: '#',
+  },
+  {
+    id: '12',
+    title: 'Automated GoHighLevel SaaS Onboarding',
+    description: 'A completely hands-off onboarding system for new SaaS clients within the GoHighLevel ecosystem, from signup to activation.',
+    overview: 'This workflow provides a seamless, automated onboarding experience for new SaaS customers on GoHighLevel. It handles account creation, welcome communication, setup guidance, and initial training without any manual intervention.',
+    problem: 'The client\'s manual onboarding process for new SaaS subscribers was slow and inconsistent, leading to a poor first impression, high churn rates, and significant time investment from the support team.',
+    solution: 'A fully automated workflow was built in GoHighLevel to trigger upon a new Stripe subscription. It creates the client\'s sub-account, sends a series of welcome emails and SMS messages, assigns a setup checklist, and provides access to a video training library.',
+    impact: 'The automation ensures every new client receives a consistent, professional, and timely onboarding experience. It dramatically reduced early-stage churn and freed up the client\'s team to focus on product development and high-value customer support.',
+    tools: ['GoHighLevel', 'Stripe API', 'Gmail API', 'Zapier'],
+    image: PlaceHolderImages.find(p => p.id === 'project12')!,
+    link: '#'
   }
 ];
 
