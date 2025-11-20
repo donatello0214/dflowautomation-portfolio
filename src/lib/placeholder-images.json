@@ -55,12 +55,6 @@
       "imageHint": "welcome new employee"
     },
     {
-      "id": "project8",
-      "description": "Facebook 3 Steps Funnel Automation",
-      "imageUrl": "/images/images/1. GHL Project 1.png",
-      "imageHint": "sales funnel"
-    },
-    {
       "id": "project8-1",
       "description": "Facebook 3 Steps Funnel Automation Image 1",
       "imageUrl": "/images/images/1. GHL Project 1.png",
@@ -109,9 +103,27 @@
       "imageHint": "appointment setting"
     },
     {
+      "id": "project9",
+      "description": "Zendesk Customer Support Ticketing System",
+      "imageUrl": "/images/images/n8n-project 3.png",
+      "imageHint": "support ticketing"
+    },
+    {
+      "id": "project10",
+      "description": "E-commerce Order & Inventory Sync",
+      "imageUrl": "/images/images/make-project-3.png",
+      "imageHint": "ecommerce sync"
+    },
+    {
       "id": "project11",
-      "description": "GoHighLevel SaaS Onboarding",
+      "description": "Conversational AI for FB Messenger Appointment Booking Chatbot",
       "imageUrl": "/images/images/GHL Project 2.png",
+      "imageHint": "SaaS onboarding"
+    },
+    {
+      "id": "project12",
+      "description": "Automated GoHighLevel SaaS Onboarding",
+      "imageUrl": "/images/images/GHL-project3.png",
       "imageHint": "SaaS onboarding"
     },
     {
@@ -147,7 +159,7 @@
     {
       "id": "testimonial2",
       "description": "Testimonial author 2 portrait",
-      "imageUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjIyMjQ5MzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjIyMjQ5MzB8MA&ixlibrb-4.1.0&q=80&w=1080",
       "imageHint": "man portrait"
     },
     {
@@ -155,18 +167,6 @@
       "description": "Testimonial author 3 portrait",
       "imageUrl": "https://images.unsplash.com/photo-1535643302794-19c3804b874b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGVyc29uJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYyMTg3MjcwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "person portrait"
-    },
-    {
-      "id": "project9",
-      "description": "Zendesk Customer Support Ticketing System",
-      "imageUrl": "/images/images/n8n-project 3.png",
-      "imageHint": "support ticketing"
-    },
-    {
-      "id": "project10",
-      "description": "E-commerce Order & Inventory Sync",
-      "imageUrl": "/images/images/make-project-3.png",
-      "imageHint": "ecommerce sync"
     }
   ]
 }
