@@ -184,18 +184,6 @@ export const projects: Project[] = [
     tools: ['GoHighLevel', 'Gmail API', 'OpenAI'],
     image: PlaceHolderImages.find(p => p.id === 'project11')!,
     link: '#',
-  },
-  {
-    id: '12',
-    title: 'Automated GoHighLevel SaaS Onboarding',
-    description: 'A completely hands-off onboarding system for new SaaS clients within the GoHighLevel ecosystem, from signup to activation.',
-    overview: 'This workflow provides a seamless, automated onboarding experience for new SaaS customers on GoHighLevel. It handles account creation, welcome communication, setup guidance, and initial training without any manual intervention.',
-    problem: 'The client\'s manual onboarding process for new SaaS subscribers was slow and inconsistent, leading to a poor first impression, high churn rates, and significant time investment from the support team.',
-    solution: 'A fully automated workflow was built in GoHighLevel to trigger upon a new Stripe subscription. It creates the client\'s sub-account, sends a series of welcome emails and SMS messages, assigns a setup checklist, and provides access to a video training library.',
-    impact: 'The automation ensures every new client receives a consistent, professional, and timely onboarding experience. It dramatically reduced early-stage churn and freed up the client\'s team to focus on product development and high-value customer support.',
-    tools: ['GoHighLevel', 'Stripe API', 'Gmail API', 'Zapier'],
-    image: PlaceHolderImages.find(p => p.id === 'project12')!,
-    link: '#'
   }
 ];
 
