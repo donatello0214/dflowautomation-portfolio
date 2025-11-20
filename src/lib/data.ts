@@ -136,7 +136,16 @@ export const projects: Project[] = [
     solution: 'A fully automated funnel was created in GoHighLevel. It engages leads with an AI chatbot via SMS/email, answers questions, and qualifies them before automatically booking appointments with sales reps.',
     impact: 'The system created a 24/7, fully automated top-of-funnel that significantly increased the number of qualified appointments. It allowed the sales team to focus on closing deals rather than chasing cold leads.',
     tools: ['GoHighLevel', 'Facebook Ads API', 'OpenAI', 'Calendly API'],
-    image: PlaceHolderImages.find(p => p.id === 'project8')!,
+    image: [
+        PlaceHolderImages.find(p => p.id === 'project8-1')!,
+        PlaceHolderImages.find(p => p.id === 'project8-2')!,
+        PlaceHolderImages.find(p => p.id === 'project8-3')!,
+        PlaceHolderImages.find(p => p.id === 'project8-4')!,
+        PlaceHolderImages.find(p => p.id === 'project8-5')!,
+        PlaceHolderImages.find(p => p.id === 'project8-6')!,
+        PlaceHolderImages.find(p => p.id === 'project8-7')!,
+        PlaceHolderImages.find(p => p.id === 'project8-8')!,
+    ],
     link: '#',
   },
   {
