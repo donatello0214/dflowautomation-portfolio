@@ -14,8 +14,8 @@
     },
     {
       "id": "project3",
-      "description": "Automated Content Pipeline Project Image",
-      "imageUrl": "https://images.unsplash.com/photo-1568578322186-a0cb6cdeb9ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YXV0b21hdGlvbiUyMHBpcGVsaW5lfGVufDB8fHx8MTc2MjIxMDk3NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Zapier + Asana CRM Automation Image",
+      "imageUrl": "/images/images/zapier-project-1.png",
       "imageHint": "automation pipeline"
     },
     {
@@ -38,19 +38,19 @@
     },
     {
       "id": "project7-1",
-      "description": "Zapier HR Onboarding Automation Image 1",
+      "description": "Perspective Lead Routing - Klaviyo & Superchat for Black Friday Sale Image 1",
       "imageUrl": "/images/images/zapier-project 7-1.png",
       "imageHint": "HR onboarding"
     },
     {
       "id": "project7-2",
-      "description": "Zapier HR Onboarding Automation Image 2",
+      "description": "Perspective Lead Routing - Klaviyo & Superchat for Black Friday Sale Image 2",
       "imageUrl": "/images/images/Superchat Automation-project 7.2.png",
       "imageHint": "Onboarding process"
     },
     {
       "id": "project7-3",
-      "description": "Zapier HR Onboarding Automation Image 3",
+      "description": "Perspective Lead Routing - Klaviyo & Superchat for Black Friday Sale Image 3",
       "imageUrl": "/images/images/Klaviyo Automation-project 7-3.png",
       "imageHint": "welcome new employee"
     },
@@ -147,13 +147,13 @@
     {
       "id": "testimonial1",
       "description": "Testimonial author 1 portrait",
-      "imageUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MjI0NDMxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/images/olivette.jpg",
       "imageHint": "woman portrait"
     },
     {
       "id": "testimonial2",
       "description": "Testimonial author 2 portrait",
-      "imageUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjIyMjQ5MzB8MA&ixlibrb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/images/Ezekiel.jpg",
       "imageHint": "man portrait"
     },
     {

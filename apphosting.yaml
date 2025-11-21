@@ -5,3 +5,11 @@ runConfig:
   # Increase this value if you'd like to automatically spin up
   # more instances in response to increased traffic.
   maxInstances: 1
+
+# Specifies the command to run to build your app. This is a standard Next.js build command.
+build:
+  run: npm run build
+
+# Specifies the command to run to start your app. This is a standard Next.js start command.
+run:
+  run: npm run start
